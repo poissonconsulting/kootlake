@@ -1,0 +1,20 @@
+Package: kootlake
+Title: Kootenay Lake Data
+Version: 0.0.0.9000
+Authors@R: c(
+    person("Joe", "Thorley", email = "joe@poissonconsulting.ca", role = c("aut", "cre")),
+    person("Jeff", "Burrows", email = "Jeff.A.Burrows@gov.bc.ca", role = c("aut", "dtc")),
+    person("Matt", "Neufeld", email = "Matt.Neufeld@gov.bc.ca", role = c("aut", "dtc")))
+Description: Datasets for Kootenay Lake.
+  Currently just annual peak counts and fish days
+  for Rainbow Trout spawners at Gerrard.
+License: CC BY 4.0 + file LICENSE
+URL: https://github.com/poissonconsulting/kootlake
+LazyData: true
+Depends: R (>= 3.2.2)
+Suggests:
+  ggplot2,
+  dplyr,
+  magrittr,
+  devtools
+
