@@ -8,14 +8,14 @@
 \describe{
   \item{Year}{The year of the spawner count as an integer.}
   \item{PeakCount}{The peak count as an integer.}
-  \item{FishDays}{The total number of fish days as estimated by AUC assuming
-  100 observer efficiency as an integer.}
+  \item{FishDays}{The total number of fish days (as estimated by AUC assuming
+  100 percent observer efficiency) as an integer.}
 }}
 \usage{
 gerrard
 }
 \description{
-The Gerrard Rainbow Trout spawner counts from 1961 to 2014.
+The Gerrard Rainbow Trout spawner counts from 1961 to 2015.
 }
 \details{
 The total escapement can be estimated by multiplying the peak count by 3.08
