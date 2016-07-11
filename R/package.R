@@ -1,10 +1,6 @@
 #' Kootenay Lake Data
 #'
-#' Datasets for Kootenay Lake.
-#'
-#' Currently just annual peak counts and fish days
-#' for the number of Rainbow Trout spawners at Gerrard
-#' as provided by the \code{\link{gerrard}} data.
+#' Annual Rainbow Trout and Kokanee datasets for Kootenay Lake.
 #'
 #' @docType package
 #' @name kootlake
