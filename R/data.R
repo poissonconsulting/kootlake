@@ -1,6 +1,6 @@
-#' Gerrard Spawner Counts
+#' Gerrard Escapement
 #'
-#' The Gerrard Rainbow Trout spawner counts from 1961 to 2015.
+#' The Gerrard Rainbow Trout spawner counts.
 #'
 #' The total escapement can be estimated by multiplying the peak count by 3.08
 #' or by dividing the total number of fish days by the residence time (currently)
@@ -8,11 +8,23 @@
 #'
 #' @format A data.frame:
 #' \describe{
-#'   \item{Year}{The year of the spawner count as an integer.}
-#'   \item{PeakCount}{The peak count as an integer.}
-#'   \item{FishDays}{The total number of fish days (as estimated by AUC assuming
-#'   100 percent observer efficiency) as an integer.}
+#'   \item{Year}{The year of the spawner count (int).}
+#'   \item{PeakCount}{The peak count (int).}
+#'   \item{FishDays}{The total number of fish days (int).}
 #'}
 #' @seealso \code{\link{kootlake}}.
 "gerrard"
 
+#' Kokanee Escapement
+#'
+#' The Kokanee escapement.
+#'
+#' @format A data.frame:
+#' \describe{
+#'   \item{Year}{The year (int).}
+#'   \item{Lardeau}{The Lardeau River escapement (int).}
+#'   \item{MeadowCreek}{The Meadow Creek escapement  (int).}
+#'   \item{Fecundity}{The average number of eggs per female  (int).}
+#'}
+#' @seealso \code{\link{kootlake}}.
+"kokanee"
