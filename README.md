@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/poissonconsulting/kootlake.svg?branch=master)](https://travis-ci.org/poissonconsulting/kootlake)
+
 # Kootenay Lake Data
 
 `kootlake` is an R package of Annual Rainbow Trout and Kokanee datasets for Kootenay Lake.
