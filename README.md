@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/poissonconsulting/kootlake.svg?branch=master)](https://travis-ci.org/poissonconsulting/kootlake)
+[![DOI](https://zenodo.org/badge/42887130.svg)](https://zenodo.org/badge/latestdoi/42887130)
 
 # Kootenay Lake Data
 
