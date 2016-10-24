@@ -1,5 +1,9 @@
 # kootlake NEWS
 
+#### v0.2.2
+
+- Added Kokanee spawner fork lengths.
+
 #### v0.2.1
 
 - Updated documentation.
