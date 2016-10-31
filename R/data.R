@@ -30,3 +30,16 @@
 #'}
 #' @seealso \code{\link{kootlake}}.
 "kokanee"
+
+#' Kootenay Lake Fishery
+#'
+#' The Kootenay Lake fishery data.
+#'
+#' @format A data.frame:
+#' \describe{
+#'   \item{Year}{The start of the angling season which runs from April to March. (int).}
+#'   \item{AnglerHours}{The estimated number of angler hours expended by anglers who purchased a Kootenay Lake Rainbow Trout (KLRT) Conservation Surcharge License (int).}
+#'}
+#' @seealso \code{\link{kootlake}}.
+"fishery"
+

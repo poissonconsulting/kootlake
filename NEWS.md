@@ -1,5 +1,9 @@
 # kootlake NEWS
 
+#### v0.2.3
+
+- Added KLRT angler hours.
+
 #### v0.2.2
 
 - Added Kokanee spawner fork lengths.
