@@ -1,8 +1,16 @@
 # kootlake NEWS
 
-#### v0.2.3
+#### v0.2.5
+
+- Added Missing values KLRT.
+
+#### v0.2.4
 
 - Added KLRT angler hours.
+
+#### v0.2.4
+
+- Release on Zenodo
 
 #### v0.2.2
 
