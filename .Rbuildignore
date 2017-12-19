@@ -3,3 +3,9 @@
 ^\.Rproj\.user$
 
 ^data-raw$
+^README\.Rmd$
+^README-.*\.png$
+^docs$
+^document.R$
+^CONDUCT\.md$
+^codecov\.yml$

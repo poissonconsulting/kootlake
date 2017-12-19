@@ -1,30 +1,32 @@
-# kootlake NEWS
+# kootlake 0.2.5.9000
 
-#### v0.2.5
+- Update documentation.
+
+# kootlake 0.2.5
 
 - Added Missing values KLRT.
 
-#### v0.2.4
+# kootlake 0.2.4
 
 - Added KLRT angler hours.
 
-#### v0.2.4
+# kootlake 0.2.4
 
 - Release on Zenodo
 
-#### v0.2.2
+# kootlake 0.2.2
 
 - Added Kokanee spawner fork lengths.
 
-#### v0.2.1
+# kootlake 0.2.1
 
 - Updated documentation.
 
-### v0.2.0
+# kootlake 0.2.0
 
 - Added Kokanee escapement at Meadow Creek and Lardeau.
 - Added 2016 Rainbow Trout escapement at Gerrard.
 
-#### v0.0.1
+# kootlake 0.0.1
 
 - Initial release.

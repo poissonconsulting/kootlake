@@ -1,11 +1,12 @@
 Package: kootlake
 Title: Kootenay Lake Data
-Version: 0.2.5
-Date: 2016-10-31
+Version: 0.2.6
+Date: 2017-12-18
 Authors@R: c(
     person("Jeff", "Burrows", email = "Jeff.A.Burrows@gov.bc.ca", role = c("aut", "dtc")),
     person("Matt", "Neufeld", email = "Matt.Neufeld@gov.bc.ca", role = c("aut", "dtc")),
     person("Joe", "Thorley", email = "joe@poissonconsulting.ca", role = c("aut", "cre")),
+    person("Marley", "Basset", role = "dtc"),
     person("Murray", "Pearson", role = "dtc"),
     person("Rhonda", "Gates", role = "dtc"),
     person("Jess", "Spencer", role = "dtc")
@@ -13,12 +14,16 @@ Authors@R: c(
 Description: Annual Rainbow Trout and Kokanee datasets for Kootenay Lake.
 License: CC BY 4.0 + file LICENSE
 URL: https://github.com/poissonconsulting/kootlake
-LazyData: true
 Depends:
     R (>= 3.2.2)
 Suggests:
+    checkr,
     ggplot2,
     dplyr,
     magrittr,
-    devtools
-RoxygenNote: 5.0.1
+    devtools,
+    testthat,
+    covr
+Additional_Repositories: http://poissonconsulting.github.io/drat
+LazyData: true
+RoxygenNote: 6.0.1

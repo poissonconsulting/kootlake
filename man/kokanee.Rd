@@ -23,4 +23,3 @@ The Kokanee escapement.
 \code{\link{kootlake}}.
 }
 \keyword{datasets}
-

@@ -25,4 +25,3 @@ assumed to be 11.9 days.
 \code{\link{kootlake}}.
 }
 \keyword{datasets}
-

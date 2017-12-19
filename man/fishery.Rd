@@ -19,4 +19,3 @@ The Kootenay Lake fishery data.
 \code{\link{kootlake}}.
 }
 \keyword{datasets}
-

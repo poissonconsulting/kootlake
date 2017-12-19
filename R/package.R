@@ -4,6 +4,7 @@
 #'
 #' @docType package
 #' @name kootlake
+#' @seealso \code{\link{fishery}}, \code{\link{gerrard}} and \code{\link{kokanee}}
 #' @examples
 #' library(ggplot2)
 #'
