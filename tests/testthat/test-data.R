@@ -27,7 +27,7 @@ test_that("kokanee", {
     Year = c(1964L, 2020L),
     Lardeau = c(1000L, 5000000L, NA),
     MeadowCreek = c(1000L, 3000000L),
-    Fecundity = c(150L, 600L, NA),
+    Fecundity = c(150L, 750L, NA),
     LengthMale = c(150L, 450L, NA),
     LengthFemale = c(150L, 450L, NA)
     ),

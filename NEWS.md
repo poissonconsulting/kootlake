@@ -1,5 +1,6 @@
 # kootlake 0.2.5.9000
 
+- Add 2017 Kokanee numbers.
 - Update documentation.
 
 # kootlake 0.2.5
