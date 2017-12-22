@@ -8,8 +8,6 @@ test_that("fishery", {
     order = TRUE,
     key = "Year"),
   kootlake::fishery)
-
-  expect_identical(fishery, get_fishery())
 })
 
 test_that("gerrard", {
@@ -22,8 +20,6 @@ test_that("gerrard", {
     order = TRUE,
     key = "Year"),
   kootlake::gerrard)
-
-  expect_identical(gerrard, get_gerrard())
 })
 
 test_that("kokanee", {
@@ -39,6 +35,4 @@ test_that("kokanee", {
     order = TRUE,
     key = "Year"),
   kootlake::kokanee)
-
-  expect_identical(kokanee, get_kokanee())
 })

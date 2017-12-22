@@ -1,7 +1,7 @@
 Package: kootlake
 Title: Kootenay Lake Data
-Version: 0.2.6
-Date: 2017-12-18
+Version: 0.2.6.9000
+Date: 2017-12-22
 Authors@R: c(
     person("Jeff", "Burrows", email = "Jeff.A.Burrows@gov.bc.ca", role = c("aut", "dtc")),
     person("Matt", "Neufeld", email = "Matt.Neufeld@gov.bc.ca", role = c("aut", "dtc")),
