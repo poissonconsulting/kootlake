@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Kootenay Lake Data — kootlake • kootlake</title>
+<title>Kokanee Escapement — get_kokanee • kootlake</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -83,32 +83,46 @@
       <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Kootenay Lake Data</h1>
+    <h1>Kokanee Escapement</h1>
     </div>
 
     
-    <p>Annual Rainbow Trout and Kokanee datasets for Kootenay Lake.</p>
+    <p>Kokanee Escapement</p>
     
 
+    <pre class="usage"><span class='fu'>get_kokanee</span>()</pre>
         
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
+
+    <p>The kokanee tbl data frame.</p>
+    
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
-    <p><code><a href='fishery.html'>fishery</a></code>, <code><a href='gerrard.html'>gerrard</a></code> and <code><a href='kokanee.html'>kokanee</a></code></p>
+    <p><code><a href='kokanee.html'>kokanee</a></code></p>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>library</span>(<span class='no'>ggplot2</span>)
-
-<span class='fu'>data</span>(<span class='no'>gerrard</span>)
-<span class='no'>gerrard</span>$<span class='no'>Escapement</span> <span class='kw'>&lt;-</span> <span class='no'>gerrard</span>$<span class='no'>PeakCount</span> * <span class='fl'>3.08</span>
-
-<span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/ggplot'>ggplot</a></span>(<span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>gerrard</span>, <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/aes'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>Year</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>Escapement</span>)) +
-  <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/geom_path'>geom_line</a></span>() + <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/expand_limits'>expand_limits</a></span>(<span class='kw'>y</span> <span class='kw'>=</span> <span class='fl'>0</span>)</div><div class='img'><img src='kootlake-1.png' alt='' width='700' height='432.632880098887' /></div></pre>
+    <pre class="examples"><div class='input'><span class='fu'>get_kokanee</span>()</div><div class='output co'>#&gt; # A tibble: 54 x 6
+#&gt;     Year Lardeau MeadowCreek Fecundity LengthMale LengthFemale
+#&gt;    &lt;int&gt;   &lt;int&gt;       &lt;int&gt;     &lt;int&gt;      &lt;int&gt;        &lt;int&gt;
+#&gt;  1  1964 1380000      346100        NA         NA           NA
+#&gt;  2  1965  510000      116100        NA         NA           NA
+#&gt;  3  1966  650000      597300        NA         NA           NA
+#&gt;  4  1967  710000      606300       235         NA           NA
+#&gt;  5  1968      NA      287600       338         NA           NA
+#&gt;  6  1969      NA      407400       248        214          212
+#&gt;  7  1970      NA      723200       250        218          218
+#&gt;  8  1971 1000000      977200       303        233          231
+#&gt;  9  1972      NA      529000       282        228          230
+#&gt; 10  1973 1800000      616500       299        230          225
+#&gt; # ... with 44 more rows</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
       
+      <li><a href="#value">Value</a></li>
+
       <li><a href="#see-also">See also</a></li>
       
       <li><a href="#examples">Examples</a></li>

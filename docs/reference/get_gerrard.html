@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Kootenay Lake Data — kootlake • kootlake</title>
+<title>Gerrard Escapement — get_gerrard • kootlake</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -83,32 +83,89 @@
       <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Kootenay Lake Data</h1>
+    <h1>Gerrard Escapement</h1>
     </div>
 
     
-    <p>Annual Rainbow Trout and Kokanee datasets for Kootenay Lake.</p>
+    <p>Gerrard Escapement</p>
     
 
+    <pre class="usage"><span class='fu'>get_gerrard</span>()</pre>
         
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
+
+    <p>The gerrard tbl data frame.</p>
+    
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
-    <p><code><a href='fishery.html'>fishery</a></code>, <code><a href='gerrard.html'>gerrard</a></code> and <code><a href='kokanee.html'>kokanee</a></code></p>
+    <p><code><a href='gerrard.html'>gerrard</a></code></p>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>library</span>(<span class='no'>ggplot2</span>)
-
-<span class='fu'>data</span>(<span class='no'>gerrard</span>)
-<span class='no'>gerrard</span>$<span class='no'>Escapement</span> <span class='kw'>&lt;-</span> <span class='no'>gerrard</span>$<span class='no'>PeakCount</span> * <span class='fl'>3.08</span>
-
-<span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/ggplot'>ggplot</a></span>(<span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>gerrard</span>, <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/aes'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>Year</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>Escapement</span>)) +
-  <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/geom_path'>geom_line</a></span>() + <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/expand_limits'>expand_limits</a></span>(<span class='kw'>y</span> <span class='kw'>=</span> <span class='fl'>0</span>)</div><div class='img'><img src='kootlake-1.png' alt='' width='700' height='432.632880098887' /></div></pre>
+    <pre class="examples"><div class='input'><span class='fu'>get_gerrard</span>()</div><div class='output co'>#&gt;    Year PeakCount FishDays
+#&gt; 1  1961       214     3534
+#&gt; 2  1962       258     5977
+#&gt; 3  1963       251     6234
+#&gt; 4  1964       234     3715
+#&gt; 5  1965       377     8297
+#&gt; 6  1966       249     7380
+#&gt; 7  1967       180     3575
+#&gt; 8  1968       178     4597
+#&gt; 9  1969       237     6275
+#&gt; 10 1970       203     3599
+#&gt; 11 1971       176     3371
+#&gt; 12 1972       238     3747
+#&gt; 13 1973       258     4979
+#&gt; 14 1974       287     6168
+#&gt; 15 1975       346     6505
+#&gt; 16 1976       272     6726
+#&gt; 17 1977       347     5878
+#&gt; 18 1978       473     8099
+#&gt; 19 1979       618    10076
+#&gt; 20 1980       440     8933
+#&gt; 21 1981       453     8435
+#&gt; 22 1982       417     8051
+#&gt; 23 1983       270     4564
+#&gt; 24 1984       220     4721
+#&gt; 25 1985       241     5077
+#&gt; 26 1986       378     8623
+#&gt; 27 1987       294     5821
+#&gt; 28 1988       340     6531
+#&gt; 29 1989       363     7028
+#&gt; 30 1990       382     9091
+#&gt; 31 1991       280     7460
+#&gt; 32 1992       219     5544
+#&gt; 33 1993       257     5841
+#&gt; 34 1994       275     7149
+#&gt; 35 1995       286     6684
+#&gt; 36 1996       275     6564
+#&gt; 37 1997       344     5551
+#&gt; 38 1998       367     6997
+#&gt; 39 1999       399     8382
+#&gt; 40 2000       340     7061
+#&gt; 41 2001       244     3762
+#&gt; 42 2002       227     4748
+#&gt; 43 2003       303     5964
+#&gt; 44 2004       406     7478
+#&gt; 45 2005       426     7242
+#&gt; 46 2006       438     7770
+#&gt; 47 2007       464     8231
+#&gt; 48 2008       514     6117
+#&gt; 49 2009       589    12599
+#&gt; 50 2010       725    14893
+#&gt; 51 2011       995    17047
+#&gt; 52 2012      1068    18231
+#&gt; 53 2013       750    14886
+#&gt; 54 2014       711    11091
+#&gt; 55 2015       188     3585
+#&gt; 56 2016       117     1930</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
       
+      <li><a href="#value">Value</a></li>
+
       <li><a href="#see-also">See also</a></li>
       
       <li><a href="#examples">Examples</a></li>

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Kootenay Lake Data — kootlake • kootlake</title>
+<title>Kootenay Lake Fishery — get_fishery • kootlake</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -83,32 +83,58 @@
       <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Kootenay Lake Data</h1>
+    <h1>Kootenay Lake Fishery</h1>
     </div>
 
     
-    <p>Annual Rainbow Trout and Kokanee datasets for Kootenay Lake.</p>
+    <p>Kootenay Lake Fishery</p>
     
 
+    <pre class="usage"><span class='fu'>get_fishery</span>()</pre>
         
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
+
+    <p>The fishery tbl data frame.</p>
+    
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
-    <p><code><a href='fishery.html'>fishery</a></code>, <code><a href='gerrard.html'>gerrard</a></code> and <code><a href='kokanee.html'>kokanee</a></code></p>
+    <p><code><a href='fishery.html'>fishery</a></code></p>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>library</span>(<span class='no'>ggplot2</span>)
-
-<span class='fu'>data</span>(<span class='no'>gerrard</span>)
-<span class='no'>gerrard</span>$<span class='no'>Escapement</span> <span class='kw'>&lt;-</span> <span class='no'>gerrard</span>$<span class='no'>PeakCount</span> * <span class='fl'>3.08</span>
-
-<span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/ggplot'>ggplot</a></span>(<span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>gerrard</span>, <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/aes'>aes</a></span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>Year</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='no'>Escapement</span>)) +
-  <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/geom_path'>geom_line</a></span>() + <span class='fu'><a href='http://www.rdocumentation.org/packages/ggplot2/topics/expand_limits'>expand_limits</a></span>(<span class='kw'>y</span> <span class='kw'>=</span> <span class='fl'>0</span>)</div><div class='img'><img src='kootlake-1.png' alt='' width='700' height='432.632880098887' /></div></pre>
+    <pre class="examples"><div class='input'><span class='fu'>get_fishery</span>()</div><div class='output co'>#&gt;    Year AnglerHours
+#&gt; 1  1991      266202
+#&gt; 2  1992      280137
+#&gt; 3  1993      261223
+#&gt; 4  1994      155377
+#&gt; 5  1995      152588
+#&gt; 6  1996      271346
+#&gt; 7  1997          NA
+#&gt; 8  1998          NA
+#&gt; 9  1999          NA
+#&gt; 10 2000      231923
+#&gt; 11 2001      191603
+#&gt; 12 2002      191913
+#&gt; 13 2003      170151
+#&gt; 14 2004      170047
+#&gt; 15 2005      153916
+#&gt; 16 2006      171722
+#&gt; 17 2007      203590
+#&gt; 18 2008      137884
+#&gt; 19 2009      149151
+#&gt; 20 2010      194544
+#&gt; 21 2011      218061
+#&gt; 22 2012      229245
+#&gt; 23 2013      240752
+#&gt; 24 2014      209975
+#&gt; 25 2015      109409</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
       
+      <li><a href="#value">Value</a></li>
+
       <li><a href="#see-also">See also</a></li>
       
       <li><a href="#examples">Examples</a></li>

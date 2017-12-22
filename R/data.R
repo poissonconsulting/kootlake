@@ -15,6 +15,15 @@
 #' @seealso \code{\link{kootlake}}.
 "gerrard"
 
+#' Gerrard Escapement
+#'
+#' @return The gerrard tbl data frame.
+#' @seealso \code{\link{gerrard}}
+#' @export
+#' @examples
+#' get_gerrard()
+get_gerrard <- function() kootlake::gerrard
+
 #' Kokanee Escapement
 #'
 #' The Kokanee escapement.
@@ -31,6 +40,15 @@
 #' @seealso \code{\link{kootlake}}.
 "kokanee"
 
+#' Kokanee Escapement
+#'
+#' @return The kokanee tbl data frame.
+#' @seealso \code{\link{kokanee}}
+#' @export
+#' @examples
+#' get_kokanee()
+get_kokanee <- function() kootlake::kokanee
+
 #' Kootenay Lake Fishery
 #'
 #' The Kootenay Lake fishery data.
@@ -43,3 +61,11 @@
 #' @seealso \code{\link{kootlake}}.
 "fishery"
 
+#' Kootenay Lake Fishery
+#'
+#' @return The fishery tbl data frame.
+#' @seealso \code{\link{fishery}}
+#' @export
+#' @examples
+#' get_fishery()
+get_fishery <- function() kootlake::fishery
