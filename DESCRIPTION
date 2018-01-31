@@ -3,11 +3,11 @@ Title: Kootenay Lake Data
 Version: 0.2.7
 Date: 2018-01-31
 Authors@R: c(
-    person("Joe", "Thorley", email = "joe@poissonconsulting.ca", role = c("aut", "cre")),
     person("Jeff", "Burrows", role = c("aut", "dtc")),
     person("Matt", "Neufeld", role = c("aut", "dtc")),
     person("Greg", "Andrusak", role = c("aut", "dtc")),
     person("Eva", "Schindler", role = c("aut", "dtc")),
+    person("Joe", "Thorley", email = "joe@poissonconsulting.ca", role = c("aut", "cre")),
     person("Marley", "Basset", role = "dtc"),
     person("Murray", "Pearson", role = "dtc"),
     person("Rhonda", "Gates", role = "dtc"),
@@ -18,12 +18,11 @@ License: Apache License (== 2.0) | file LICENSE
 URL: https://github.com/poissonconsulting/kootlake
 Depends:
     R (>= 3.1.0)
-Suggests:
+Imports:
     checkr,
+    stats
+Suggests:
     ggplot2,
-    dplyr,
-    magrittr,
-    devtools,
     testthat,
     covr
 LazyData: true

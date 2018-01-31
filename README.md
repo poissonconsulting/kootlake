@@ -16,6 +16,11 @@ BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)
 Kokanee datasets for Kootenay Lake. The data is provided by the Ministry
 of Forests, Lands and Natural Resources Operations, British Columbia.
 
+It includes the `kl_estimate_na()` function to estimate missing variable
+values from a predictor using a linear model. By default it estimates
+missing Bull Trout redd counts for Kaslo Creek using the resistivity
+counter counts.
+
 ## Installation
 
 `kootlake` is available from GitHub

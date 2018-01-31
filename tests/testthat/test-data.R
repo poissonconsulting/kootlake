@@ -1,5 +1,17 @@
 context("data")
 
+test_that("bulltrout", {
+ expect_identical(checkr::check_data(kootlake::bulltrout, values = list(
+    Year = c(1964L, 2020L),
+    KasloRedds = c(100L, 2000L, NA),
+    KeenRedds = c(10L, 500L, NA),
+    KasloCounter = c(100L, 2000L, NA)),
+    exclusive = TRUE,
+    order = TRUE,
+    key = "Year"),
+  kootlake::bulltrout)
+})
+
 test_that("fishery", {
  expect_identical(checkr::check_data(kootlake::fishery, values = list(
     Year = c(1991L, 2020L),

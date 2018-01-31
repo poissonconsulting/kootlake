@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>All news • kootlake</title>
+<title>Estimate Missing Values — kl_estimate_na • kootlake</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -37,7 +37,7 @@
   </head>
 
   <body>
-    <div class="container template-news">
+    <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -81,24 +81,68 @@
       </header>
 
       <div class="row">
-
-  <div class="col-md-9">
+  <div class="col-md-9 contents">
     <div class="page-header">
-      <h1>Change log <small>All releases</small></h1>
+    <h1>Estimate Missing Values</h1>
     </div>
 
-    <div class="contents">
-    </div>
+    
+    <p>Estimates missing variable values from a predictor using a linear model.</p>
+    
+
+    <pre class="usage"><span class='fu'>kl_estimate_na</span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='kw pkg'>kootlake</span><span class='kw ns'>::</span><span class='no'><a href='http://www.rdocumentation.org/packages/kootlake/topics/bulltrout'>bulltrout</a></span>, <span class='kw'>variable</span> <span class='kw'>=</span> <span class='st'>"KasloRedds"</span>,
+  <span class='kw'>predictor</span> <span class='kw'>=</span> <span class='st'>"KasloCounter"</span>)</pre>
+    
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>x</th>
+      <td><p>A data frame with columns of the variable and predictor.</p></td>
+    </tr>
+    <tr>
+      <th>variable</th>
+      <td><p>A string of the name of the variable column.</p></td>
+    </tr>
+    <tr>
+      <th>predictor</th>
+      <td><p>A string of the name of the predictor column.</p></td>
+    </tr>
+    </table>
+    
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
+
+    <p>The original data frame with missing variable values replaced by the estimated value.</p>
+    
+
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='fu'>kl_estimate_na</span>()</div><div class='output co'>#&gt; # A tibble: 12 x 4
+#&gt;     Year KasloRedds KeenRedds KasloCounter
+#&gt;    &lt;int&gt;      &lt;dbl&gt;     &lt;int&gt;        &lt;int&gt;
+#&gt;  1  2006        321       100          716
+#&gt;  2  2007        458       116         1007
+#&gt;  3  2008        471       137         1197
+#&gt;  4  2009        542       139         1219
+#&gt;  5  2010        464        94         1170
+#&gt;  6  2011        439        73         1180
+#&gt;  7  2012        433        80         1270
+#&gt;  8  2013        305        50          844
+#&gt;  9  2014        113        17          350
+#&gt; 10  2015        135        80          393
+#&gt; 11  2016        340        34           NA
+#&gt; 12  2017        241       101           NA</div></pre>
   </div>
-
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
-    <div id="tocnav">
-      <h2>Contents</h2>
-      <ul class="nav nav-pills nav-stacked">
-      </ul>
-    </div>
-  </div>
+    <h2>Contents</h2>
+    <ul class="nav nav-pills nav-stacked">
+      <li><a href="#arguments">Arguments</a></li>
+      
+      <li><a href="#value">Value</a></li>
+      
+      <li><a href="#examples">Examples</a></li>
+    </ul>
 
+  </div>
 </div>
 
       <footer>

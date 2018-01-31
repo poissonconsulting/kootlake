@@ -42,3 +42,17 @@
 #'}
 #' @seealso \code{\link{kootlake}}.
 "fishery"
+
+#' Bull Trout Counts
+#'
+#' The annual resistivity counter and redd counts for Kaslo and Keen Creeks.
+#'
+#' @format A tbl data frame:
+#' \describe{
+#'   \item{Year}{The year (int).}
+#'   \item{KasloRedds}{The Kaslo Creek redd count (int).}
+#'   \item{KeenRedds}{The Keen Creek redd count (int).}
+#'   \item{KasloCounter}{The Kaslo Creek resistivity counter count (int).}
+#'}
+#' @seealso \code{\link{kootlake}}.
+"bulltrout"

@@ -6,7 +6,13 @@
 \alias{kootlake-package}
 \title{Kootenay Lake Data}
 \description{
-Annual Rainbow Trout and Kokanee datasets for Kootenay Lake.
+Annual Rainbow Trout, Bull Trout and Kokanee datasets for Kootenay Lake.
+}
+\details{
+It includes the `kl_estimate_na()` function to estimate missing variable values
+from a predictor using a linear model.
+By default it estimates missing Bull Trout redd counts for Kaslo Creek
+using the resistivity counter counts.
 }
 \examples{
 library(ggplot2)
@@ -18,5 +24,5 @@ ggplot(data = gerrard, aes(x = Year, y = Escapement)) +
   geom_line() + expand_limits(y = 0)
 }
 \seealso{
-\code{\link{fishery}}, \code{\link{gerrard}} and \code{\link{kokanee}}
+\code{\link{bulltrout}}, \code{\link{fishery}}, \code{\link{gerrard}} and \code{\link{kokanee}}
 }

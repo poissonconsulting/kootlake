@@ -1,5 +1,6 @@
 # kootlake 0.2.7
 
+- Added `kl_estimate_na()` function to estimate missing values using a linear model
 - Added Kaslo and Keen Bull Trout Redd and Resistivity Counts
 
 # kootlake 0.2.6

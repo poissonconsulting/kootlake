@@ -1,5 +1,8 @@
 {
-  "@context": ["http://purl.org/codemeta/2.0", "http://schema.org"],
+  "@context": [
+    "http://purl.org/codemeta/2.0",
+    "http://schema.org"
+  ],
   "@type": "SoftwareSourceCode",
   "identifier": "kootlake",
   "description": "Annual Rainbow Trout, Bull Trout and Kokanee datasets for Kootenay Lake.",
@@ -16,12 +19,6 @@
   },
   "runtimePlatform": "R version 3.4.3 Patched (2017-12-05 r73849)",
   "author": [
-    {
-      "@type": "Person",
-      "givenName": "Joe",
-      "familyName": "Thorley",
-      "email": "joe@poissonconsulting.ca"
-    },
     {
       "@type": "Person",
       "givenName": "Jeff",
@@ -41,6 +38,12 @@
       "@type": "Person",
       "givenName": "Eva",
       "familyName": "Schindler"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Joe",
+      "familyName": "Thorley",
+      "email": "joe@poissonconsulting.ca"
     }
   ],
   "maintainer": {
@@ -52,52 +55,8 @@
   "softwareSuggestions": [
     {
       "@type": "SoftwareApplication",
-      "identifier": "checkr",
-      "name": "checkr",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Central R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      }
-    },
-    {
-      "@type": "SoftwareApplication",
       "identifier": "ggplot2",
       "name": "ggplot2",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Central R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      }
-    },
-    {
-      "@type": "SoftwareApplication",
-      "identifier": "dplyr",
-      "name": "dplyr",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Central R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      }
-    },
-    {
-      "@type": "SoftwareApplication",
-      "identifier": "magrittr",
-      "name": "magrittr",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Central R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      }
-    },
-    {
-      "@type": "SoftwareApplication",
-      "identifier": "devtools",
-      "name": "devtools",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -131,6 +90,22 @@
   "softwareRequirements": [
     {
       "@type": "SoftwareApplication",
+      "identifier": "checkr",
+      "name": "checkr",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Central R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "stats",
+      "name": "stats"
+    },
+    {
+      "@type": "SoftwareApplication",
       "identifier": "R",
       "name": "R",
       "version": "3.1.0"
@@ -139,5 +114,5 @@
   "contIntegration": "https://travis-ci.org/poissonconsulting/kootlake",
   "releaseNotes": "https://github.com/poissonconsulting/kootlake/blob/master/NEWS.md",
   "readme": "https://github.com/poissonconsulting/kootlake/blob/master/README.md",
-  "fileSize": "43.997KB"
+  "fileSize": "45.746KB"
 }
