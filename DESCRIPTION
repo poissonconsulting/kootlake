@@ -1,6 +1,6 @@
 Package: kootlake
 Title: Kootenay Lake Data
-Version: 0.2.7
+Version: 0.2.7.9000
 Date: 2018-01-31
 Authors@R: c(
     person("Jeff", "Burrows", role = c("aut", "dtc")),

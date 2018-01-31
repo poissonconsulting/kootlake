@@ -8,7 +8,7 @@ Status](https://travis-ci.org/poissonconsulting/kootlake.svg?branch=master)](htt
 Status](https://img.shields.io/codecov/c/github/poissonconsulting/kootlake/master.svg)](https://codecov.io/github/poissonconsulting/kootlake?branch=master)
 [![License: CC
 BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
-[![DOI](https://zenodo.org/badge/42887130.svg)](https://zenodo.org/badge/latestdoi/42887130)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.596654.svg)](https://doi.org/10.5281/zenodo.596654)
 
 # Kootenay Lake Data
 
@@ -49,7 +49,7 @@ To cite package 'kootlake' in publications use:
 
   Jeff Burrows, Matt Neufeld, Greg Andrusak, Eva Schindler and Joe
   Thorley (2018). kootlake: Kootenay Lake Data. R package version
-  0.2.7. https://github.com/poissonconsulting/kootlake
+  0.2.7.9000. https://github.com/poissonconsulting/kootlake
 
 A BibTeX entry for LaTeX users is
 
@@ -57,7 +57,7 @@ A BibTeX entry for LaTeX users is
     title = {kootlake: Kootenay Lake Data},
     author = {Jeff Burrows and Matt Neufeld and Greg Andrusak and Eva Schindler and Joe Thorley},
     year = {2018},
-    note = {R package version 0.2.7},
+    note = {R package version 0.2.7.9000},
     url = {https://github.com/poissonconsulting/kootlake},
   }
 ```
