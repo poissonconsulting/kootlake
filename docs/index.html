@@ -69,18 +69,35 @@
 <section id="kootenay-lake-data" class="level1"><div class="page-header"><h1>Kootenay Lake Data</h1></div>
 <p><code>kootlake</code> is an R package of annual Rainbow Trout, Bull Trout and Kokanee datasets for Kootenay Lake. The data is provided by the Ministry of Forests, Lands and Natural Resources Operations, British Columbia.</p>
 <p>It includes the <code><a href="reference/kl_estimate_na.html">kl_estimate_na()</a></code> function to estimate missing variable values from a predictor using a linear model. By default it estimates missing Bull Trout redd counts for Kaslo Creek using the resistivity counter counts.</p>
-<section id="installation" class="level2"><h2>Installation</h2>
+<section id="demonstration" class="level2"><h2>Demonstration</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">library</span>(ggplot2)</a>
+<a class="sourceLine" id="cb1-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb1-3" data-line-number="3"><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/ggplot">ggplot</a></span>(<span class="dt">data =</span> kootlake<span class="op">::</span>gerrard, <span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/aes">aes</a></span>(<span class="dt">x =</span> Year, <span class="dt">y =</span> PeakCount <span class="op">*</span><span class="st"> </span><span class="fl">3.08</span>)) <span class="op">+</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb1-4" data-line-number="4"><span class="st">  </span><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/geom_path">geom_line</a></span>() <span class="op">+</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb1-5" data-line-number="5"><span class="st">  </span><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/geom_point">geom_point</a></span>() <span class="op">+</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb1-6" data-line-number="6"><span class="st">  </span><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/expand_limits">expand_limits</a></span>(<span class="dt">y =</span> <span class="dv">0</span>)</a></code></pre></div>
+<p><img src="tools/README-unnamed-chunk-2-1.png" width="672"></p>
+</section><section id="installation" class="level2"><h2>Installation</h2>
 <p><code>kootlake</code> is available from GitHub</p>
 <pre><code><a href="http://www.rdocumentation.org/packages/devtools/topics/install_github"># install.packages("devtools")
 devtools::install_github("poissonconsulting/kootlake")</a></code></pre>
-</section><section id="demonstration" class="level2"><h2>Demonstration</h2>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw">library</span>(ggplot2)</a>
-<a class="sourceLine" id="cb2-2" data-line-number="2"></a>
-<a class="sourceLine" id="cb2-3" data-line-number="3"><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/ggplot">ggplot</a></span>(<span class="dt">data =</span> kootlake<span class="op">::</span>gerrard, <span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/aes">aes</a></span>(<span class="dt">x =</span> Year, <span class="dt">y =</span> PeakCount <span class="op">*</span><span class="st"> </span><span class="fl">3.08</span>)) <span class="op">+</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb2-4" data-line-number="4"><span class="st">  </span><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/geom_path">geom_line</a></span>() <span class="op">+</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb2-5" data-line-number="5"><span class="st">  </span><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/geom_point">geom_point</a></span>() <span class="op">+</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb2-6" data-line-number="6"><span class="st">  </span><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/expand_limits">expand_limits</a></span>(<span class="dt">y =</span> <span class="dv">0</span>)</a></code></pre></div>
-<p><img src="tools/README-unnamed-chunk-2-1.png" width="672"></p>
+</section><section id="citation" class="level2"><h2>Citation</h2>
+<pre><code>
+To cite package 'kootlake' in publications use:
+
+  Jeff Burrows, Matt Neufeld, Greg Andrusak, Eva Schindler and Joe
+  Thorley (2018). kootlake: Kootenay Lake Data. R package version
+  0.2.7. https://github.com/poissonconsulting/kootlake
+
+A BibTeX entry for LaTeX users is
+
+  @Manual{,
+    title = {kootlake: Kootenay Lake Data},
+    author = {Jeff Burrows and Matt Neufeld and Greg Andrusak and Eva Schindler and Joe Thorley},
+    year = {2018},
+    note = {R package version 0.2.7},
+    url = {https://github.com/poissonconsulting/kootlake},
+  }</code></pre>
 </section><section id="contribution" class="level2"><h2>Contribution</h2>
 <p>Please report any <a href="https://github.com/poissonconsulting/kootlake/issues">issues</a>.</p>
 <p><a href="https://github.com/poissonconsulting/kootlake/pulls">Pull requests</a> are always welcome.</p>

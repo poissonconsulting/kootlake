@@ -21,13 +21,6 @@ values from a predictor using a linear model. By default it estimates
 missing Bull Trout redd counts for Kaslo Creek using the resistivity
 counter counts.
 
-## Installation
-
-`kootlake` is available from GitHub
-
-    # install.packages("devtools")
-    devtools::install_github("poissonconsulting/kootlake")
-
 ## Demonstration
 
 ``` r
@@ -40,6 +33,34 @@ ggplot(data = kootlake::gerrard, aes(x = Year, y = PeakCount * 3.08)) +
 ```
 
 ![](tools/README-unnamed-chunk-2-1.png)<!-- -->
+
+## Installation
+
+`kootlake` is available from GitHub
+
+    # install.packages("devtools")
+    devtools::install_github("poissonconsulting/kootlake")
+
+## Citation
+
+``` 
+
+To cite package 'kootlake' in publications use:
+
+  Jeff Burrows, Matt Neufeld, Greg Andrusak, Eva Schindler and Joe
+  Thorley (2018). kootlake: Kootenay Lake Data. R package version
+  0.2.7. https://github.com/poissonconsulting/kootlake
+
+A BibTeX entry for LaTeX users is
+
+  @Manual{,
+    title = {kootlake: Kootenay Lake Data},
+    author = {Jeff Burrows and Matt Neufeld and Greg Andrusak and Eva Schindler and Joe Thorley},
+    year = {2018},
+    note = {R package version 0.2.7},
+    url = {https://github.com/poissonconsulting/kootlake},
+  }
+```
 
 ## Contribution
 
