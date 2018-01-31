@@ -1,3 +1,7 @@
+# kootlake 0.2.7
+
+- Added Kaslo and Keen Bull Trout Redd and Resistivity Counts
+
 # kootlake 0.2.6
 
 - Added 2016 and 2017 Kokanee numbers.

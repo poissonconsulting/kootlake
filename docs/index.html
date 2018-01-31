@@ -67,30 +67,18 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 <section id="kootenay-lake-data" class="level1"><div class="page-header"><h1>Kootenay Lake Data</h1></div>
-<p><code>kootlake</code> is an R package of annual Rainbow Trout and Kokanee datasets for Kootenay Lake. The data is provided by the Ministry of Forests, Lands and Natural Resources Operations, British Columbia.</p>
+<p><code>kootlake</code> is an R package of annual Rainbow Trout, Bull Trout and Kokanee datasets for Kootenay Lake. The data is provided by the Ministry of Forests, Lands and Natural Resources Operations, British Columbia.</p>
 <section id="installation" class="level2"><h2>Installation</h2>
 <p><code>kootlake</code> is available from GitHub</p>
 <pre><code><a href="http://www.rdocumentation.org/packages/devtools/topics/install_github"># install.packages("devtools")
 devtools::install_github("poissonconsulting/kootlake")</a></code></pre>
-<p>or the Poisson R Archive Network (<a href="https://github.com/poissonconsulting/drat">PoisRAN</a>)</p>
-<pre><code><a href="http://www.rdocumentation.org/packages/drat/topics/addRepo"># install.packages("drat")
-drat::addRepo("poissonconsulting")
-install.packages("kootlake")</a></code></pre>
 </section><section id="demonstration" class="level2"><h2>Demonstration</h2>
-<pre class="sourceCode r" id="cb3"><code class="sourceCode r"><div class="sourceLine" id="cb3-1" data-line-number="1">
-<span class="kw">library</span>(ggplot2)</div>
-<div class="sourceLine" id="cb3-2" data-line-number="2"></div>
-<div class="sourceLine" id="cb3-3" data-line-number="3">
-<span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/ggplot">ggplot</a></span>(<span class="dt">data =</span> kootlake<span class="op">::</span>gerrard, <span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/aes">aes</a></span>(<span class="dt">x =</span> Year, <span class="dt">y =</span> PeakCount <span class="op">*</span><span class="st"> </span><span class="fl">3.08</span>)) <span class="op">+</span><span class="st"> </span>
-</div>
-<div class="sourceLine" id="cb3-4" data-line-number="4">
-<span class="st">  </span><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/geom_path">geom_line</a></span>() <span class="op">+</span><span class="st"> </span>
-</div>
-<div class="sourceLine" id="cb3-5" data-line-number="5">
-<span class="st">  </span><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/geom_point">geom_point</a></span>() <span class="op">+</span><span class="st"> </span>
-</div>
-<div class="sourceLine" id="cb3-6" data-line-number="6">
-<span class="st">  </span><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/expand_limits">expand_limits</a></span>(<span class="dt">y =</span> <span class="dv">0</span>)</div></code></pre>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw">library</span>(ggplot2)</a>
+<a class="sourceLine" id="cb2-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb2-3" data-line-number="3"><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/ggplot">ggplot</a></span>(<span class="dt">data =</span> kootlake<span class="op">::</span>gerrard, <span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/aes">aes</a></span>(<span class="dt">x =</span> Year, <span class="dt">y =</span> PeakCount <span class="op">*</span><span class="st"> </span><span class="fl">3.08</span>)) <span class="op">+</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb2-4" data-line-number="4"><span class="st">  </span><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/geom_path">geom_line</a></span>() <span class="op">+</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb2-5" data-line-number="5"><span class="st">  </span><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/geom_point">geom_point</a></span>() <span class="op">+</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb2-6" data-line-number="6"><span class="st">  </span><span class="kw"><a href="http://www.rdocumentation.org/packages/ggplot2/topics/expand_limits">expand_limits</a></span>(<span class="dt">y =</span> <span class="dv">0</span>)</a></code></pre></div>
 <p><img src="tools/README-unnamed-chunk-2-1.png" width="672"></p>
 </section><section id="contribution" class="level2"><h2>Contribution</h2>
 <p>Please report any <a href="https://github.com/poissonconsulting/kootlake/issues">issues</a>.</p>
@@ -111,20 +99,20 @@ install.packages("kootlake")</a></code></pre>
 <p>Apache License (== 2.0) | file <a href="LICENSE.html">LICENSE</a></p>
 <h2>Developers</h2>
 <ul class="list-unstyled">
+<li>Joe Thorley <br><small class="roles"> Author, maintainer </small> </li>
 <li>Jeff Burrows <br><small class="roles"> Author, data contributor </small> </li>
 <li>Matt Neufeld <br><small class="roles"> Author, data contributor </small> </li>
-<li>Joe Thorley <br><small class="roles"> Author, maintainer </small> </li>
+<li>Greg Andrusak <br><small class="roles"> Author, data contributor </small> </li>
+<li>Eva Schindler <br><small class="roles"> Author, data contributor </small> </li>
 <li><a href="authors.html">All authors...</a></li>
 </ul>
 <h2>Dev status</h2>
 <ul class="list-unstyled">
 <li><a href="https://github.com/joethorley/stability-badges#stable"><img src="https://img.shields.io/badge/stability-stable-green.svg" alt="stability-stable"></a></li>
 <li><a href="https://travis-ci.org/poissonconsulting/kootlake"><img src="https://travis-ci.org/poissonconsulting/kootlake.svg?branch=master" alt="Travis-CI Build Status"></a></li>
-<li><a href="https://ci.appveyor.com/project/poissonconsulting/kootlake"><img src="https://ci.appveyor.com/api/projects/status/github/poissonconsulting/kootlake?branch=master&amp;svg=true" alt="AppVeyor Build Status"></a></li>
 <li><a href="https://codecov.io/github/poissonconsulting/kootlake?branch=master"><img src="https://img.shields.io/codecov/c/github/poissonconsulting/kootlake/master.svg" alt="Coverage Status"></a></li>
 <li><a href="https://creativecommons.org/licenses/by-sa/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg" alt="License: CC BY-SA 4.0"></a></li>
 <li><a href="https://zenodo.org/badge/latestdoi/42887130"><img src="https://zenodo.org/badge/42887130.svg" alt="DOI"></a></li>
-<li><a href="https://cran.r-project.org/package=kootlake"><img src="http://www.r-pkg.org/badges/version/kootlake" alt="CRAN_Status_Badge"></a></li>
 </ul>
 </div>
 
@@ -132,7 +120,7 @@ install.packages("kootlake")</a></code></pre>
 
 
       <footer><div class="copyright">
-  <p>Developed by Jeff Burrows, Matt Neufeld, Joe Thorley.</p>
+  <p>Developed by Joe Thorley, Jeff Burrows, Matt Neufeld, Greg Andrusak, Eva Schindler.</p>
 </div>
 
 <div class="pkgdown">

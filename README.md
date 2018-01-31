@@ -4,20 +4,17 @@
 [![stability-stable](https://img.shields.io/badge/stability-stable-green.svg)](https://github.com/joethorley/stability-badges#stable)
 [![Travis-CI Build
 Status](https://travis-ci.org/poissonconsulting/kootlake.svg?branch=master)](https://travis-ci.org/poissonconsulting/kootlake)
-[![AppVeyor Build
-Status](https://ci.appveyor.com/api/projects/status/github/poissonconsulting/kootlake?branch=master&svg=true)](https://ci.appveyor.com/project/poissonconsulting/kootlake)
 [![Coverage
 Status](https://img.shields.io/codecov/c/github/poissonconsulting/kootlake/master.svg)](https://codecov.io/github/poissonconsulting/kootlake?branch=master)
 [![License: CC
 BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 [![DOI](https://zenodo.org/badge/42887130.svg)](https://zenodo.org/badge/latestdoi/42887130)
-[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/kootlake)](https://cran.r-project.org/package=kootlake)
 
 # Kootenay Lake Data
 
-`kootlake` is an R package of annual Rainbow Trout and Kokanee datasets
-for Kootenay Lake. The data is provided by the Ministry of Forests,
-Lands and Natural Resources Operations, British Columbia.
+`kootlake` is an R package of annual Rainbow Trout, Bull Trout and
+Kokanee datasets for Kootenay Lake. The data is provided by the Ministry
+of Forests, Lands and Natural Resources Operations, British Columbia.
 
 ## Installation
 
@@ -25,13 +22,6 @@ Lands and Natural Resources Operations, British Columbia.
 
     # install.packages("devtools")
     devtools::install_github("poissonconsulting/kootlake")
-
-or the Poisson R Archive Network
-([PoisRAN](https://github.com/poissonconsulting/drat))
-
-    # install.packages("drat")
-    drat::addRepo("poissonconsulting")
-    install.packages("kootlake")
 
 ## Demonstration
 

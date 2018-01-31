@@ -9,3 +9,4 @@
 ^document.R$
 ^CONDUCT\.md$
 ^codecov\.yml$
+^codemeta\.json$
