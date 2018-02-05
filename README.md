@@ -4,6 +4,8 @@
 [![stability-stable](https://img.shields.io/badge/stability-stable-green.svg)](https://github.com/joethorley/stability-badges#stable)
 [![Travis-CI Build
 Status](https://travis-ci.org/poissonconsulting/kootlake.svg?branch=master)](https://travis-ci.org/poissonconsulting/kootlake)
+[![AppVeyor Build
+Status](https://ci.appveyor.com/api/projects/status/github/poissonconsulting/kootlake?branch=master&svg=true)](https://ci.appveyor.com/project/poissonconsulting/kootlake)
 [![Coverage
 Status](https://img.shields.io/codecov/c/github/poissonconsulting/kootlake/master.svg)](https://codecov.io/github/poissonconsulting/kootlake?branch=master)
 [![License: CC
@@ -47,17 +49,17 @@ ggplot(data = kootlake::gerrard, aes(x = Year, y = PeakCount * 3.08)) +
 
 To cite package 'kootlake' in publications use:
 
-  Jeff Burrows, Matt Neufeld, Greg Andrusak, Eva Schindler and Joe
-  Thorley (2018). kootlake: Kootenay Lake Data. R package version
-  0.2.7.9000. https://github.com/poissonconsulting/kootlake
+  Jeff Burrows, Matt Neufeld, Greg Andrusak and Eva Schindler
+  (2018). kootlake: Kootenay Lake Data. R package version
+  0.2.7.9001. https://github.com/poissonconsulting/kootlake
 
 A BibTeX entry for LaTeX users is
 
   @Manual{,
     title = {kootlake: Kootenay Lake Data},
-    author = {Jeff Burrows and Matt Neufeld and Greg Andrusak and Eva Schindler and Joe Thorley},
+    author = {Jeff Burrows and Matt Neufeld and Greg Andrusak and Eva Schindler},
     year = {2018},
-    note = {R package version 0.2.7.9000},
+    note = {R package version 0.2.7.9001},
     url = {https://github.com/poissonconsulting/kootlake},
   }
 ```

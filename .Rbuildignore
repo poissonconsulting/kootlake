@@ -10,3 +10,4 @@
 ^CONDUCT\.md$
 ^codecov\.yml$
 ^codemeta\.json$
+^appveyor\.yml$
