@@ -26,7 +26,7 @@ test_that("gerrard", {
  expect_identical(checkr::check_data(kootlake::gerrard, values = list(
     Year = c(1961L, 2020L),
     PeakCount = c(0L, 1500L),
-    FishDays = c(0L, 20000L)
+    FishDays = c(0L, 20000L, NA)
     ),
     exclusive = TRUE,
     order = TRUE,

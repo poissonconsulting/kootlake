@@ -8,9 +8,9 @@
   "description": "Annual Rainbow Trout, Bull Trout and Kokanee datasets for Kootenay Lake.",
   "name": "kootlake: Kootenay Lake Data",
   "codeRepository": "https://github.com/poissonconsulting/kootlake",
-  "datePublished": "2018-02-05",
+  "datePublished": "2018-02-07",
   "license": "https://spdx.org/licenses/Apache-2.0",
-  "version": "0.2.7.9001",
+  "version": "0.2.7.9002",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
@@ -108,5 +108,5 @@
   "contIntegration": "https://travis-ci.org/poissonconsulting/kootlake",
   "releaseNotes": "https://github.com/poissonconsulting/kootlake/blob/master/NEWS.md",
   "readme": "https://github.com/poissonconsulting/kootlake/blob/master/README.md",
-  "fileSize": "45.982KB"
+  "fileSize": "45.798KB"
 }
