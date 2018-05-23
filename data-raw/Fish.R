@@ -5,7 +5,7 @@ library(devtools)
 
 rm(list = ls())
 
-Fish <- read_csv("data-raw/Fish.csv")
-Fish %<>% arrange(Year)
+fish <- read_csv("data-raw/fish.csv")
+fish %<>% arrange(Year)
 
-devtools::use_data(Fish, overwrite = TRUE)
+devtools::use_data(fish, overwrite = TRUE)

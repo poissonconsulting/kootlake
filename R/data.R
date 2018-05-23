@@ -56,3 +56,25 @@
 #'}
 #' @seealso \code{\link{kootlake}}.
 "bulltrout"
+
+#' Rainbow Trout data
+#'
+#' Data for individual Rainbow Trout in lakes and rivers.
+#'
+#' @format A data.frame
+#' \describe{
+#'   \item{Year}{The year (int).}
+#'   \item{Month}{The month (int).}
+#'   \item{Day}{The day (int).}
+#'   \item{Species}{Species by code eg. "RB" (factor, 1 level).}
+#'   \item{Length}{Fork length in mm (int).}
+#'   \item{Weight}{Weight in kg (int).}
+#'   \item{Sex}{Sex, "male" or "female" (factor, 2 levels).}
+#'   \item{Fecundity}{number of eggs (int).}
+#'   \item{Location}{Lake or River (factor, 2 levels)}
+#'   \item{SampleID}{Sample ID}
+#'   \item{Source}{The source of the data (char).}
+#'   \item{Comment}{comments for observations with year date ranges (char).}
+#'}
+#' @seealso \code{\link{kootlake}}.
+"fish"
