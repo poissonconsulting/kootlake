@@ -53,7 +53,7 @@ To cite package 'kootlake' in publications use:
 
   Jeff Burrows, Matt Neufeld, Greg Andrusak, Eva Schindler and Joe
   Thorley (2018). kootlake: Kootenay Lake Data. R package version
-  0.2.7.9003. https://github.com/poissonconsulting/kootlake
+  0.2.7.9004. https://github.com/poissonconsulting/kootlake
 
 A BibTeX entry for LaTeX users is
 
@@ -61,7 +61,7 @@ A BibTeX entry for LaTeX users is
     title = {kootlake: Kootenay Lake Data},
     author = {Jeff Burrows and Matt Neufeld and Greg Andrusak and Eva Schindler and Joe Thorley},
     year = {2018},
-    note = {R package version 0.2.7.9003},
+    note = {R package version 0.2.7.9004},
     url = {https://github.com/poissonconsulting/kootlake},
   }
 ```

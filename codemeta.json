@@ -9,7 +9,7 @@
   "name": "kootlake: Kootenay Lake Data",
   "codeRepository": "https://github.com/poissonconsulting/kootlake",
   "license": "https://spdx.org/licenses/Apache-2.0",
-  "version": "0.2.7.9003",
+  "version": "0.2.7.9004",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
@@ -119,9 +119,14 @@
   "contIntegration": "https://travis-ci.org/poissonconsulting/kootlake",
   "releaseNotes": "https://github.com/poissonconsulting/kootlake/blob/master/NEWS.md",
   "readme": "https://github.com/poissonconsulting/kootlake/blob/master/README.md",
-  "fileSize": "94.886KB",
+  "fileSize": "94.907KB",
   "issueTracker": "https://github.com/poissonconsulting/kootlake/issues",
   "contributor": [
+    {
+      "@type": "Person",
+      "givenName": "Evan",
+      "familyName": "Galonski"
+    },
     {
       "@type": "Person",
       "givenName": "Jeff",
@@ -169,5 +174,9 @@
       "familyName": "Spencer"
     }
   ],
-  "keywords": ["rstats", "kootenay-lake", "bcgov"]
+  "keywords": [
+    "rstats",
+    "kootenay-lake",
+    "bcgov"
+  ]
 }

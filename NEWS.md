@@ -1,3 +1,5 @@
+- Added individual fish data
+
 # kootlake 0.2.7
 
 - Added `kl_estimate_na()` function to estimate missing values using a linear model
