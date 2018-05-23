@@ -8,16 +8,15 @@
   "description": "Annual Rainbow Trout, Bull Trout and Kokanee datasets for Kootenay Lake.",
   "name": "kootlake: Kootenay Lake Data",
   "codeRepository": "https://github.com/poissonconsulting/kootlake",
-  "datePublished": "2018-04-17",
   "license": "https://spdx.org/licenses/Apache-2.0",
   "version": "0.2.7.9003",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
-    "version": "3.4.4",
+    "version": "3.5.0",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 3.4.4 (2018-03-15)",
+  "runtimePlatform": "R version 3.5.0 (2018-04-23)",
   "author": [
     {
       "@type": "Person",
@@ -46,12 +45,14 @@
       "email": "joe@poissonconsulting.ca"
     }
   ],
-  "maintainer": {
-    "@type": "Person",
-    "givenName": "Joe",
-    "familyName": "Thorley",
-    "email": "joe@poissonconsulting.ca"
-  },
+  "maintainer": [
+    {
+      "@type": "Person",
+      "givenName": "Joe",
+      "familyName": "Thorley",
+      "email": "joe@poissonconsulting.ca"
+    }
+  ],
   "softwareSuggestions": [
     {
       "@type": "SoftwareApplication",
@@ -60,9 +61,10 @@
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
-        "name": "Central R Archive Network (CRAN)",
+        "name": "Comprehensive R Archive Network (CRAN)",
         "url": "https://cran.r-project.org"
-      }
+      },
+      "sameAs": "https://CRAN.R-project.org/package=ggplot2"
     },
     {
       "@type": "SoftwareApplication",
@@ -71,9 +73,10 @@
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
-        "name": "Central R Archive Network (CRAN)",
+        "name": "Comprehensive R Archive Network (CRAN)",
         "url": "https://cran.r-project.org"
-      }
+      },
+      "sameAs": "https://CRAN.R-project.org/package=testthat"
     },
     {
       "@type": "SoftwareApplication",
@@ -82,12 +85,19 @@
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
-        "name": "Central R Archive Network (CRAN)",
+        "name": "Comprehensive R Archive Network (CRAN)",
         "url": "https://cran.r-project.org"
-      }
+      },
+      "sameAs": "https://CRAN.R-project.org/package=covr"
     }
   ],
   "softwareRequirements": [
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "R",
+      "name": "R",
+      "version": ">= 3.1.0"
+    },
     {
       "@type": "SoftwareApplication",
       "identifier": "checkr",
@@ -95,25 +105,69 @@
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
-        "name": "Central R Archive Network (CRAN)",
+        "name": "Comprehensive R Archive Network (CRAN)",
         "url": "https://cran.r-project.org"
-      }
+      },
+      "sameAs": "https://CRAN.R-project.org/package=checkr"
     },
     {
       "@type": "SoftwareApplication",
       "identifier": "stats",
       "name": "stats"
-    },
-    {
-      "@type": "SoftwareApplication",
-      "identifier": "R",
-      "name": "R",
-      "version": "3.1.0"
     }
   ],
   "contIntegration": "https://travis-ci.org/poissonconsulting/kootlake",
   "releaseNotes": "https://github.com/poissonconsulting/kootlake/blob/master/NEWS.md",
   "readme": "https://github.com/poissonconsulting/kootlake/blob/master/README.md",
-  "fileSize": "39.537KB",
-  "issueTracker": "https://github.com/poissonconsulting/kootlake/issues"
+  "fileSize": "94.886KB",
+  "issueTracker": "https://github.com/poissonconsulting/kootlake/issues",
+  "contributor": [
+    {
+      "@type": "Person",
+      "givenName": "Jeff",
+      "familyName": "Burrows"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Matt",
+      "familyName": "Neufeld"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Greg",
+      "familyName": "Andrusak"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Eva",
+      "familyName": "Schindler"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Joe",
+      "familyName": "Thorley",
+      "email": "joe@poissonconsulting.ca"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Marley",
+      "familyName": "Basset"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Murray",
+      "familyName": "Pearson"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Rhonda",
+      "familyName": "Gates"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Jess",
+      "familyName": "Spencer"
+    }
+  ],
+  "keywords": ["rstats", "kootenay-lake", "bcgov"]
 }

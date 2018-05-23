@@ -22,8 +22,6 @@ The data is provided by the Ministry of Forests, Lands and Natural Resources Ope
 It includes the `kl_estimate_na()` function to estimate missing variable values from a predictor using a linear model.
 By default it estimates missing Bull Trout redd counts for Kaslo Creek using the resistivity counter counts.
 
-Small change by Evan
-
 ## Demonstration
 
 
