@@ -37,7 +37,11 @@
 #'
 #' @format A data.frame:
 #' \describe{
-#'   \item{Year}{The start of the angling season which runs from April to March. (int).}
+#'   \item{StartYear}{The start year of the angling season which runs from April to March (int).}
+#'   \item{EndYear}{The end year of the angling season which runs from April to March (int).}
+#'   \item{Licences}{The number of KLRT licenses sold (int).}
+#'   \item{Mailings}{Number of end of season surveys mailed out to licence holders (int).}
+#'   \item{Returns}{Number of filled surveys returned (int).}
 #'   \item{AnglerHours}{The estimated number of angler hours expended by anglers who purchased a Kootenay Lake Rainbow Trout (KLRT) Conservation Surcharge License (int).}
 #'}
 #' @seealso \code{\link{kootlake}}.
@@ -78,3 +82,20 @@
 #'}
 #' @seealso \code{\link{kootlake}}.
 "fish"
+
+#' Fishery Catch Counts
+#'
+#' Harvested and Released counts for Bull and Rainbow Trout
+#'
+#' @format A data.frame
+#' \describe{
+#'  \item{StartYear}{The start year of the angling season (int).}
+#'  \item{EndYear}{The end year of the angling season (int).}
+#'  \item{Harvested}{Estimated count of individuals harvested (int).}
+#'  \item{Released}{Estimated count of individuals released (int).}
+#'  \item{MinWeight}{Bottom of weight range (int).}
+#'  \item{MaxWeight}{Top of weight range (int).}
+#'  \item{Species}{Species, RB or BT (factor. 2 levels).}
+#'}
+#' @seealso \code{\link{kootlake}}.
+"fishery_catch"
