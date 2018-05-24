@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Rainbow Trout data — fish • kootlake</title>
+<title>Fishery Catch Counts — fishery_catch • kootlake</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -28,9 +28,9 @@
 
 
 
-<meta property="og:title" content="Rainbow Trout data — fish" />
+<meta property="og:title" content="Fishery Catch Counts — fishery_catch" />
 
-<meta property="og:description" content="Data for individual Rainbow Trout in lakes and rivers." />
+<meta property="og:description" content="Harvested and Released counts for Bull and Rainbow Trout" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -97,34 +97,29 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Rainbow Trout data</h1>
+    <h1>Fishery Catch Counts</h1>
     <small class="dont-index">Source: <a href='https://github.com/poissonconsulting/kootlake/blob/master/R/data.R'><code>R/data.R</code></a></small>
-    <div class="hidden name"><code>fish.Rd</code></div>
+    <div class="hidden name"><code>fishery_catch.Rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>Data for individual Rainbow Trout in lakes and rivers.</p>
+    <p>Harvested and Released counts for Bull and Rainbow Trout</p>
     
     </div>
 
-    <pre class="usage"><span class='no'>fish</span></pre>
+    <pre class="usage"><span class='no'>fishery_catch</span></pre>
         
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
     <p>A data.frame</p><dl class='dl-horizontal'>
-  <dt>Year</dt><dd><p>The year (int).</p></dd>
-  <dt>Month</dt><dd><p>The month (int).</p></dd>
-  <dt>Day</dt><dd><p>The day (int).</p></dd>
-  <dt>Species</dt><dd><p>Species by code eg. "RB" (factor, 1 level).</p></dd>
-  <dt>Length</dt><dd><p>Fork length in mm (int).</p></dd>
-  <dt>Weight</dt><dd><p>Weight in kg (int).</p></dd>
-  <dt>Sex</dt><dd><p>Sex, "male" or "female" (factor, 2 levels).</p></dd>
-  <dt>Fecundity</dt><dd><p>number of eggs (int).</p></dd>
-  <dt>Location</dt><dd><p>Lake or River (factor, 2 levels)</p></dd>
-  <dt>SampleID</dt><dd><p>Sample ID</p></dd>
-  <dt>Source</dt><dd><p>The source of the data (char).</p></dd>
-  <dt>Comment</dt><dd><p>comments for observations with year date ranges (char).</p></dd>
+ <dt>StartYear</dt><dd><p>The start year of the angling season (int).</p></dd>
+ <dt>EndYear</dt><dd><p>The end year of the angling season (int).</p></dd>
+ <dt>Harvested</dt><dd><p>Estimated count of individuals harvested (int).</p></dd>
+ <dt>Released</dt><dd><p>Estimated count of individuals released (int).</p></dd>
+ <dt>MinWeight</dt><dd><p>Bottom of weight range (int).</p></dd>
+ <dt>MaxWeight</dt><dd><p>Top of weight range (int).</p></dd>
+ <dt>Species</dt><dd><p>Species, RB or BT (factor. 2 levels).</p></dd>
 </dl>
     
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
