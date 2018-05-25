@@ -1,0 +1,76 @@
+---
+title: "Allometry of Kootenay Lake Rainbow Trout"
+author: "Evan Amies-Galonski"
+date: "May 25, 2018"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{kootqlt}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  message=FALSE,
+  warning = FALSE,
+  collapse = TRUE,
+  comment = "#>"
+  
+)
+```
+Here we plot relationships between Rainbow Trout metrics and fit a linear model to estimate the allometric ralationships for:
+
+## Weight vs Length
+
+```{r,fig.align='center',out.extra='angle=90'}
+library(ggplot2)
+library(broom)
+
+fish <- kootlake::fish
+
+is.na(fish$Weight[is.na(fish$Weight) | fish$Weight == 0]) <- TRUE
+
+WL_mod <- lm(log(Weight) ~ log(Length), data = fish)
+WL_data <- data.frame(Length = seq(min(fish$Length), max(fish$Length), length.out = 30L))
+WL_data$Weight <- exp(predict(WL_mod, newdata = WL_data))
+
+ggplot(data = fish, aes(x = Length, y = Weight)) +
+  geom_point(alpha = 0.4, size = 1) +
+  geom_line(data = WL_data, col = "blue") +
+  expand_limits(y = 0)
+
+tidy(WL_mod, conf.int = TRUE)
+```
+
+## Fecundity vs Length
+
+```{r,fig.align='center',out.extra='angle=90'}
+FL_mod <- lm(log(Fecundity) ~ log(Length), data = fish)
+
+FL_data <- data.frame(Length = seq(min(fish$Length), max(fish$Length), length.out = 30L))
+FL_data$Fecundity <- exp(predict(FL_mod, newdata = FL_data))
+
+ggplot(data = fish, aes(x = Length, y = Fecundity)) +
+  geom_point(alpha = 0.5, size = 1) +
+  geom_line(data = FL_data, col = "blue") +
+  expand_limits(y = 0)
+
+tidy(FL_mod, conf.int = TRUE)
+
+```
+
+## Fecundity vs Weight
+
+
+```{r,fig.align='center',out.extra='angle=90'}
+FW_mod <- lm(log(Fecundity) ~ log(Weight), data = fish)
+
+FW_data <- data.frame(Weight = seq(min(fish$Weight, na.rm = TRUE), max(fish$Weight, na.rm = TRUE), length.out = 30L))
+FW_data$Fecundity <- exp(predict(FW_mod, newdata = FW_data))
+
+ggplot(data = fish, aes(x = Weight, y = Fecundity)) +
+  geom_point(alpha = 0.5, size = 1) +
+  geom_line(data = FW_data, col = "blue") +
+  expand_limits(y = 0)
+
+tidy(FW_mod, conf.int = TRUE)
+```
