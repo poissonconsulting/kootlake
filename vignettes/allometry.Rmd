@@ -1,5 +1,5 @@
 ---
-title: "fish"
+title: "Allometry of Kootenay Lake Rainbow Trout"
 author: "Evan Amies-Galonski"
 date: "May 25, 2018"
 output: rmarkdown::html_vignette
@@ -18,14 +18,12 @@ knitr::opts_chunk$set(
 )
 ```
 Here we plot relationships between Rainbow Trout metrics and fit a linear model to estimate the allometric ralationships for:
-<br>
-<br>
 
-Weight vs Length
+## Weight vs Length
 
 ```{r,fig.align='center',out.extra='angle=90'}
 library(ggplot2)
-library(dplyr)
+library(broom)
 
 fish <- kootlake::fish
 
@@ -40,12 +38,10 @@ ggplot(data = fish, aes(x = Length, y = Weight)) +
   geom_line(data = WL_data, col = "blue") +
   expand_limits(y = 0)
 
-summary(WL_mod)
+tidy(WL_mod, conf.int = TRUE)
 ```
 
-<br>
-<br>
-Fecundity vs Length
+## Fecundity vs Length
 
 ```{r,fig.align='center',out.extra='angle=90'}
 FL_mod <- lm(log(Fecundity) ~ log(Length), data = fish)
@@ -58,19 +54,17 @@ ggplot(data = fish, aes(x = Length, y = Fecundity)) +
   geom_line(data = FL_data, col = "blue") +
   expand_limits(y = 0)
 
-summary(FL_mod)
+tidy(FL_mod, conf.int = TRUE)
 
 ```
-<br>
-<br>
-Fecundity vs Weight
+
+## Fecundity vs Weight
 
 
 ```{r,fig.align='center',out.extra='angle=90'}
-fish_no_na <- filter(fish, !is.na(Weight))
-FW_mod <- lm(log(Fecundity) ~ log(Weight), data = fish_no_na)
+FW_mod <- lm(log(Fecundity) ~ log(Weight), data = fish)
 
-FW_data <- data.frame(Weight = seq(min(fish_no_na$Weight), max(fish_no_na$Weight), length.out = 30L))
+FW_data <- data.frame(Weight = seq(min(fish$Weight, na.rm = TRUE), max(fish$Weight, na.rm = TRUE), length.out = 30L))
 FW_data$Fecundity <- exp(predict(FW_mod, newdata = FW_data))
 
 ggplot(data = fish, aes(x = Weight, y = Fecundity)) +
@@ -78,7 +72,5 @@ ggplot(data = fish, aes(x = Weight, y = Fecundity)) +
   geom_line(data = FW_data, col = "blue") +
   expand_limits(y = 0)
 
-summary(FW_mod)
+tidy(FW_mod, conf.int = TRUE)
 ```
-
-

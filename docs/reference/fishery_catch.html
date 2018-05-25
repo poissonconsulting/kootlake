@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Estimate Missing Values — kl_estimate_na • kootlake</title>
+<title>Fishery Catch Counts — fishery_catch • kootlake</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -28,9 +28,9 @@
 
 
 
-<meta property="og:title" content="Estimate Missing Values — kl_estimate_na" />
+<meta property="og:title" content="Fishery Catch Counts — fishery_catch" />
 
-<meta property="og:description" content="Estimates missing variable values from a predictor using a linear model." />
+<meta property="og:description" content="Harvested and Released counts for Bull and Rainbow Trout" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -109,68 +109,45 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Estimate Missing Values</h1>
-    <small class="dont-index">Source: <a href='https://github.com/poissonconsulting/kootlake/blob/master/R/estimate-na.R'><code>R/estimate-na.R</code></a></small>
-    <div class="hidden name"><code>kl_estimate_na.Rd</code></div>
+    <h1>Fishery Catch Counts</h1>
+    <small class="dont-index">Source: <a href='https://github.com/poissonconsulting/kootlake/blob/master/R/data.R'><code>R/data.R</code></a></small>
+    <div class="hidden name"><code>fishery_catch.Rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>Estimates missing variable values from a predictor using a linear model.</p>
+    <p>Harvested and Released counts for Bull and Rainbow Trout</p>
     
     </div>
 
-    <pre class="usage"><span class='fu'>kl_estimate_na</span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='kw pkg'>kootlake</span><span class='kw ns'>::</span><span class='no'><a href='http://www.rdocumentation.org/packages/kootlake/topics/bulltrout'>bulltrout</a></span>, <span class='kw'>variable</span> <span class='kw'>=</span> <span class='st'>"KasloRedds"</span>,
-  <span class='kw'>predictor</span> <span class='kw'>=</span> <span class='st'>"KasloCounter"</span>)</pre>
-    
-    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
-    <table class="ref-arguments">
-    <colgroup><col class="name" /><col class="desc" /></colgroup>
-    <tr>
-      <th>x</th>
-      <td><p>A data frame with columns of the variable and predictor.</p></td>
-    </tr>
-    <tr>
-      <th>variable</th>
-      <td><p>A string of the name of the variable column.</p></td>
-    </tr>
-    <tr>
-      <th>predictor</th>
-      <td><p>A string of the name of the predictor column.</p></td>
-    </tr>
-    </table>
-    
-    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
+    <pre class="usage"><span class='no'>fishery_catch</span></pre>
+        
+    <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>The original data frame with missing variable values replaced by the estimated value.</p>
+    <p>A data.frame</p><dl class='dl-horizontal'>
+ <dt>StartYear</dt><dd><p>The start year of the angling season (int).</p></dd>
+ <dt>EndYear</dt><dd><p>The end year of the angling season (int).</p></dd>
+ <dt>Harvested</dt><dd><p>Estimated count of individuals harvested (int).</p></dd>
+ <dt>Released</dt><dd><p>Estimated count of individuals released (int).</p></dd>
+ <dt>MinWeight</dt><dd><p>Bottom of weight range (int).</p></dd>
+ <dt>MaxWeight</dt><dd><p>Top of weight range (int).</p></dd>
+ <dt>Species</dt><dd><p>Species, RB or BT (factor. 2 levels).</p></dd>
+</dl>
+    
+    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
+
+    <div class='dont-index'><p><code><a href='kootlake.html'>kootlake</a></code>.</p></div>
     
 
-    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>kl_estimate_na</span>()</div><div class='output co'>#&gt; # A tibble: 12 x 4
-#&gt;     Year KasloRedds KeenRedds KasloCounter
-#&gt;    &lt;int&gt;      &lt;dbl&gt;     &lt;int&gt;        &lt;int&gt;
-#&gt;  1  2006       321        100          716
-#&gt;  2  2007       458        116         1007
-#&gt;  3  2008       471        137         1197
-#&gt;  4  2009       542        139         1219
-#&gt;  5  2010       464.        94         1170
-#&gt;  6  2011       439         73         1180
-#&gt;  7  2012       433         80         1270
-#&gt;  8  2013       305         50          844
-#&gt;  9  2014       113         17          350
-#&gt; 10  2015       135         80          393
-#&gt; 11  2016       340         34           NA
-#&gt; 12  2017       364        113           NA</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
-      <li><a href="#arguments">Arguments</a></li>
       
-      <li><a href="#value">Value</a></li>
-      
-      <li><a href="#examples">Examples</a></li>
-    </ul>
+      <li><a href="#format">Format</a></li>
+
+      <li><a href="#see-also">See also</a></li>
+          </ul>
 
   </div>
 </div>
