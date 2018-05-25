@@ -14,11 +14,12 @@ test_that("bulltrout", {
 
 test_that("fishery", {
  expect_identical(checkr::check_data(kootlake::fishery, values = list(
-    Year = c(1991L, 2020L),
-    AnglerHours = c(0L, 1000000L, NA)),
+    StartYear = c(1980L, 2020L),
+    EndYear = c(1980L, 2020L),
+    AnglerHours = c(0, 1000000, NA)),
     exclusive = TRUE,
     order = TRUE,
-    key = "Year"),
+    key = "StartYear"),
   kootlake::fishery)
 })
 
