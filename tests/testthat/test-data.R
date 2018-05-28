@@ -1,7 +1,7 @@
 context("data")
 
 test_that("bulltrout", {
- expect_identical(checkr::check_data(kootlake::bulltrout, values = list(
+  expect_identical(checkr::check_data(kootlake::bulltrout, values = list(
     Year = c(1964L, 2020L),
     KasloRedds = c(100L, 2000L, NA),
     KeenRedds = c(10L, 500L, NA),
@@ -9,43 +9,70 @@ test_that("bulltrout", {
     exclusive = TRUE,
     order = TRUE,
     key = "Year"),
-  kootlake::bulltrout)
+    kootlake::bulltrout)
 })
 
 test_that("fishery", {
- expect_identical(checkr::check_data(kootlake::fishery, values = list(
+  expect_identical(checkr::check_data(kootlake::fishery, values = list(
     StartYear = c(1980L, 2020L),
     EndYear = c(1980L, 2020L),
-    AnglerHours = c(0, 1000000, NA)),
+    AnglerHours = c(0L, 1000000L, NA)),
     exclusive = TRUE,
     order = TRUE,
     key = "StartYear"),
-  kootlake::fishery)
+    kootlake::fishery)
 })
 
 test_that("gerrard", {
- expect_identical(checkr::check_data(kootlake::gerrard, values = list(
+  expect_identical(checkr::check_data(kootlake::gerrard, values = list(
     Year = c(1961L, 2020L),
     PeakCount = c(0L, 1500L),
     FishDays = c(0L, 20000L, NA)
-    ),
-    exclusive = TRUE,
-    order = TRUE,
-    key = "Year"),
+  ),
+  exclusive = TRUE,
+  order = TRUE,
+  key = "Year"),
   kootlake::gerrard)
 })
 
 test_that("kokanee", {
- expect_identical(checkr::check_data(kootlake::kokanee, values = list(
+  expect_identical(checkr::check_data(kootlake::kokanee, values = list(
     Year = c(1964L, 2020L),
     Lardeau = c(1000L, 5000000L, NA),
     MeadowCreek = c(1000L, 3000000L),
     Fecundity = c(150L, 750L, NA),
     LengthMale = c(150L, 450L, NA),
     LengthFemale = c(150L, 450L, NA)
-    ),
-    exclusive = TRUE,
-    order = TRUE,
-    key = "Year"),
+  ),
+  exclusive = TRUE,
+  order = TRUE,
+  key = "Year"),
   kootlake::kokanee)
+})
+
+test_that("fish", {
+  expect_identical(checkr::check_data(kootlake::fish, values = list(
+    Year = c(1964L, 2020L, NA),
+    Month = c(1L, 12L, NA),
+    Day = c(1L, 31L, NA),
+    Species = c("RB", "BT", "KO"),
+    Length = c(100L, 1100L),
+    Weight = c(0.1, 15, NA),
+    Sex = c("male", "female", "female", NA),
+    Fecundity = c(100L, 20000L, NA),
+    Location = c("river", "lake", "lake", NA),
+    SampleID = c(1L, 2000L, NA)
+  )), kootlake::fish)
+})
+
+test_that("fishery_catch", {
+  expect_identical(checkr::check_data(kootlake::fishery_catch, values = list(
+    StartYear = c(1964L, 2020L),
+    EndYear = c(1964L, 2020L),
+    Species = c("RB", "BT", "KO"),
+    Harvested = c(0L, 40000L, NA),
+    Released = c(0L, 40000L, NA),
+    MinWeight = c(0L, 7L),
+    MaxWeight = c(2L, Inf)
+  )), kootlake::fishery_catch)
 })
