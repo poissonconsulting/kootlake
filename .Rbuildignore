@@ -6,7 +6,7 @@
 ^README\.Rmd$
 ^README-.*\.png$
 ^docs$
-^document.R$
+^check.R$
 ^CONDUCT\.md$
 ^codecov\.yml$
 ^codemeta\.json$
