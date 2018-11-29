@@ -1,11 +1,13 @@
 library(dplyr)
 library(magrittr)
 library(readr)
-library(devtools)
+library(usethis)
 
 rm(list = ls())
 
-bulltrout <- read_csv("data-raw/bulltrout.csv")
+bulltrout <- read_csv("data-raw/bulltrout.csv") %>%
+  mutate(Year = as.integer(Year), KasloRedds = as.integer(KasloRedds), KeenRedds = as.integer(KeenRedds),
+         KasloCounter = as.integer(KasloCounter))
 
 bulltrout %<>% arrange(Year)
-devtools::use_data(bulltrout, overwrite = TRUE)
+usethis::use_data(bulltrout, overwrite = TRUE)

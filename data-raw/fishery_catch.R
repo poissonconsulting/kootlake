@@ -1,11 +1,12 @@
 library(dplyr)
 library(magrittr)
 library(readr)
-library(devtools)
+library(usethis)
 
 rm(list = ls())
 
-fishery_catch <- read_csv("data-raw/fishery_catch.csv")
+fishery_catch <- read_csv("data-raw/fishery_catch.csv") %>%
+  mutate(StartYear = as.integer(StartYear), EndYear = as.integer(EndYear))
 
 fishery_catch %<>% arrange(StartYear)
-devtools::use_data(fishery_catch, overwrite = TRUE)
+usethis::use_data(fishery_catch, overwrite = TRUE)
