@@ -11,3 +11,4 @@
 ^codecov\.yml$
 ^codemeta\.json$
 ^appveyor\.yml$
+^build\.R$

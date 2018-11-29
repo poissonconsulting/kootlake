@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 ```
 
 
-[![stability-stable](https://img.shields.io/badge/stability-stable-green.svg)](https://github.com/joethorley/stability-badges#stable)
+[![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 [![Travis-CI Build Status](https://travis-ci.org/poissonconsulting/kootlake.svg?branch=master)](https://travis-ci.org/poissonconsulting/kootlake)
 [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/poissonconsulting/kootlake?branch=master&svg=true)](https://ci.appveyor.com/project/poissonconsulting/kootlake)
 [![Coverage Status](https://img.shields.io/codecov/c/github/poissonconsulting/kootlake/master.svg)](https://codecov.io/github/poissonconsulting/kootlake?branch=master)
@@ -47,16 +47,11 @@ ggplot(data = kootlake::gerrard, aes(x = Year, y = PeakCount * 3.08)) +
 devtools::install_github("poissonconsulting/kootlake")
 ```
 
-## Citation
-
-```{r, comment="", echo=FALSE}
-citation(package = "kootlake")
-```
-
 ## Contribution
 
 Please report any [issues](https://github.com/poissonconsulting/kootlake/issues).
 
 [Pull requests](https://github.com/poissonconsulting/kootlake/pulls) are always welcome.
 
-Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
+Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). 
+By participating in this project you agree to abide by its terms.

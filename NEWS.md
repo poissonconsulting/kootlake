@@ -1,5 +1,6 @@
+- Added 2018 Gerrard peak count
 - Added fishery catch data
-- updated fishery data to include licenses sold and license holder survey data
+- Updated fishery data to include licenses sold and license holder survey data
 - Added individual fish data
 
 # kootlake 0.2.7
