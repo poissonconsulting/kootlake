@@ -18,7 +18,7 @@
 <![endif]-->
 </head>
 <body>
-    <div class="container template-home">
+    <div class="container template-article">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
@@ -30,7 +30,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">kootlake</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.2.7.9006</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.2.7.9007</span>
       </span>
     </div>
 
@@ -78,31 +78,59 @@
 
       
       </header><div class="row">
-  <div class="contents col-md-9">
+  <div class="col-md-9 contents">
+    
+
+    
+    
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 <div id="kootenay-lake-data" class="section level1">
 <div class="page-header"><h1 class="hasAnchor">
 <a href="#kootenay-lake-data" class="anchor"></a>Kootenay Lake Data</h1></div>
 <p><code>kootlake</code> is an R package of annual Rainbow Trout, Bull Trout and Kokanee datasets for Kootenay Lake. The data is provided by the Ministry of Forests, Lands and Natural Resources Operations, British Columbia.</p>
-<p>It includes the <code><a href="reference/kl_estimate_na.html">kl_estimate_na()</a></code> function to estimate missing variable values from a predictor using a linear model. By default it estimates missing Bull Trout redd counts for Kaslo Creek using the resistivity counter counts.</p>
+<p>It provides a data set of individual fish length, weight, sex and fecundity information.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(tibble)</a>
+<a class="sourceLine" id="cb1-2" title="2"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(kootlake)</a>
+<a class="sourceLine" id="cb1-3" title="3">kootlake<span class="op">::</span>fish</a>
+<a class="sourceLine" id="cb1-4" title="4"><span class="co">#&gt; # A tibble: 1,843 x 12</span></a>
+<a class="sourceLine" id="cb1-5" title="5"><span class="co">#&gt;     Year Month   Day Species Length Weight Sex   Fecundity Location</span></a>
+<a class="sourceLine" id="cb1-6" title="6"><span class="co">#&gt;    &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;     &lt;dbl&gt; &lt;chr&gt;   </span></a>
+<a class="sourceLine" id="cb1-7" title="7"><span class="co">#&gt;  1  1966     1     2 RB         580    2.8 &lt;NA&gt;         NA &lt;NA&gt;    </span></a>
+<a class="sourceLine" id="cb1-8" title="8"><span class="co">#&gt;  2  1966     1     5 RB         650    3.6 &lt;NA&gt;         NA &lt;NA&gt;    </span></a>
+<a class="sourceLine" id="cb1-9" title="9"><span class="co">#&gt;  3  1966     1     7 RB         420    0.8 &lt;NA&gt;         NA &lt;NA&gt;    </span></a>
+<a class="sourceLine" id="cb1-10" title="10"><span class="co">#&gt;  4  1966     1     8 RB         600    3.1 &lt;NA&gt;         NA &lt;NA&gt;    </span></a>
+<a class="sourceLine" id="cb1-11" title="11"><span class="co">#&gt;  5  1966     1     8 RB         630    3.6 &lt;NA&gt;         NA &lt;NA&gt;    </span></a>
+<a class="sourceLine" id="cb1-12" title="12"><span class="co">#&gt;  6  1966     1    15 RB         710    4.6 &lt;NA&gt;         NA &lt;NA&gt;    </span></a>
+<a class="sourceLine" id="cb1-13" title="13"><span class="co">#&gt;  7  1966     1    18 RB         737    6.4 &lt;NA&gt;         NA &lt;NA&gt;    </span></a>
+<a class="sourceLine" id="cb1-14" title="14"><span class="co">#&gt;  8  1966     1    18 RB         620    3   &lt;NA&gt;         NA &lt;NA&gt;    </span></a>
+<a class="sourceLine" id="cb1-15" title="15"><span class="co">#&gt;  9  1966     1    22 RB         500    1.7 &lt;NA&gt;         NA &lt;NA&gt;    </span></a>
+<a class="sourceLine" id="cb1-16" title="16"><span class="co">#&gt; 10  1966     1    30 RB         680    5.2 &lt;NA&gt;         NA &lt;NA&gt;    </span></a>
+<a class="sourceLine" id="cb1-17" title="17"><span class="co">#&gt; # … with 1,833 more rows, and 3 more variables: SampleID &lt;dbl&gt;,</span></a>
+<a class="sourceLine" id="cb1-18" title="18"><span class="co">#&gt; #   Source &lt;chr&gt;, Comment &lt;chr&gt;</span></a></code></pre></div>
+<p>As well as data sets of annual counts for each species (<code>bulltrout</code>, <code>kokanee</code> and <code>gerrard</code>) and annual <code>fishery</code> and <code>fishery_catch</code> information from the Kootenay Lake Rainbow Trout mail out survey (KLRT).</p>
+<p>It also provides the <code><a href="reference/kl_estimate_na.html">kl_estimate_na()</a></code> function to estimate missing variable values from a predictor using a linear model. By default it estimates missing Bull Trout redd counts for Kaslo Creek using the resistivity counter counts.</p>
 <div id="demonstration" class="section level2">
 <h2 class="hasAnchor">
 <a href="#demonstration" class="anchor"></a>Demonstration</h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(ggplot2)</a>
-<a class="sourceLine" id="cb1-2" title="2"></a>
-<a class="sourceLine" id="cb1-3" title="3"><span class="kw"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(<span class="dt">data =</span> kootlake<span class="op">::</span>gerrard, <span class="kw"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(<span class="dt">x =</span> Year, <span class="dt">y =</span> PeakCount <span class="op">*</span><span class="st"> </span><span class="fl">3.08</span>)) <span class="op">+</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb1-4" title="4"><span class="st">  </span><span class="kw"><a href="https://ggplot2.tidyverse.org/reference/geom_path.html">geom_line</a></span>() <span class="op">+</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb1-5" title="5"><span class="st">  </span><span class="kw"><a href="https://ggplot2.tidyverse.org/reference/geom_point.html">geom_point</a></span>() <span class="op">+</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb1-6" title="6"><span class="st">  </span><span class="kw"><a href="https://ggplot2.tidyverse.org/reference/expand_limits.html">expand_limits</a></span>(<span class="dt">y =</span> <span class="dv">0</span>)</a></code></pre></div>
-<p><img src="tools/README-unnamed-chunk-2-1.png" width="700"></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" title="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(ggplot2)</a>
+<a class="sourceLine" id="cb2-2" title="2"></a>
+<a class="sourceLine" id="cb2-3" title="3"><span class="kw"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(<span class="dt">data =</span> kootlake<span class="op">::</span>gerrard, <span class="kw"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(<span class="dt">x =</span> Year, <span class="dt">y =</span> PeakCount <span class="op">*</span><span class="st"> </span><span class="fl">3.08</span>)) <span class="op">+</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb2-4" title="4"><span class="st">  </span><span class="kw"><a href="https://ggplot2.tidyverse.org/reference/geom_path.html">geom_line</a></span>() <span class="op">+</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb2-5" title="5"><span class="st">  </span><span class="kw"><a href="https://ggplot2.tidyverse.org/reference/geom_point.html">geom_point</a></span>() <span class="op">+</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb2-6" title="6"><span class="st">  </span><span class="kw"><a href="https://ggplot2.tidyverse.org/reference/expand_limits.html">expand_limits</a></span>(<span class="dt">y =</span> <span class="dv">0</span>)</a></code></pre></div>
+<p><img src="tools/README-unnamed-chunk-3-1.png" width="700"></p>
 </div>
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
-<p><code>kootlake</code> is available from GitHub</p>
+<p>To install the latest development version from <a href="https://github.com/poissonconsulting/kootlake">GitHub</a></p>
 <pre><code><a href="https://www.rdocumentation.org/packages/devtools/topics/reexports"># install.packages("devtools")
 devtools::install_github("poissonconsulting/kootlake")</a></code></pre>
+<p>To install the latest development version from the Poisson drat <a href="https://github.com/poissonconsulting/drat">repository</a></p>
+<pre><code><a href="https://www.rdocumentation.org/packages/drat/topics/addRepo"># install.packages("drat")
+drat::addRepo("poissonconsulting")
+install.packages("kootlake")</a></code></pre>
 </div>
 <div id="contribution" class="section level2">
 <h2 class="hasAnchor">
@@ -114,7 +142,7 @@ devtools::install_github("poissonconsulting/kootlake")</a></code></pre>
 </div>
   </div>
 
-  <div class="col-md-3" id="sidebar">
+  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <div class="links">
 <h2>Links</h2>
 <ul class="list-unstyled">
@@ -144,7 +172,7 @@ devtools::install_github("poissonconsulting/kootlake")</a></code></pre>
 </ul>
 </div>
 
-  <div class="dev-status">
+      <div class="dev-status">
 <h2>Dev status</h2>
 <ul class="list-unstyled">
 <li><a href="https://www.tidyverse.org/lifecycle/#maturing"><img src="https://img.shields.io/badge/lifecycle-maturing-blue.svg" alt="lifecycle"></a></li>
@@ -156,6 +184,7 @@ devtools::install_github("poissonconsulting/kootlake")</a></code></pre>
 </ul>
 </div>
 </div>
+
 </div>
 
 
@@ -164,7 +193,7 @@ devtools::install_github("poissonconsulting/kootlake")</a></code></pre>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.2.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.3.0.</p>
 </div>
       </footer>
 </div>

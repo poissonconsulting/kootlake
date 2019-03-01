@@ -1,6 +1,6 @@
 Package: kootlake
 Title: Kootenay Lake Data
-Version: 0.2.7.9006
+Version: 0.2.7.9007
 Authors@R: c(
     person("Jeff", "Burrows", role = c("aut", "dtc")),
     person("Matt", "Neufeld", role = c("aut", "dtc")),
@@ -28,7 +28,10 @@ Suggests:
     ggplot2,
     knitr,
     rmarkdown,
+    tibble,
     testthat
 LazyData: true
 RoxygenNote: 6.1.1
 VignetteBuilder: knitr
+Encoding: UTF-8
+

@@ -25,7 +25,16 @@ knitr::opts_chunk$set(
 `kootlake` is an R package of annual Rainbow Trout, Bull Trout and Kokanee datasets for Kootenay Lake.
 The data is provided by the Ministry of Forests, Lands and Natural Resources Operations, British Columbia.
 
-It includes the `kl_estimate_na()` function to estimate missing variable values from a predictor using a linear model.
+It provides a data set of individual fish length, weight, sex and fecundity information.
+```{r}
+library(tibble)
+library(kootlake)
+kootlake::fish
+```
+
+As well as data sets of annual counts for each species (`bulltrout`, `kokanee` and `gerrard`) and annual `fishery` and `fishery_catch` information from the Kootenay Lake Rainbow Trout mail out survey (KLRT).
+
+It also provides the `kl_estimate_na()` function to estimate missing variable values from a predictor using a linear model.
 By default it estimates missing Bull Trout redd counts for Kaslo Creek using the resistivity counter counts.
 
 ## Demonstration
@@ -41,12 +50,18 @@ ggplot(data = kootlake::gerrard, aes(x = Year, y = PeakCount * 3.08)) +
 
 ## Installation
 
-`kootlake` is available from GitHub
+To install the latest development version from [GitHub](https://github.com/poissonconsulting/kootlake)
 ```
 # install.packages("devtools")
 devtools::install_github("poissonconsulting/kootlake")
 ```
 
+To install the latest development version from the Poisson drat [repository](https://github.com/poissonconsulting/drat)
+```
+# install.packages("drat")
+drat::addRepo("poissonconsulting")
+install.packages("kootlake")
+```
 ## Contribution
 
 Please report any [issues](https://github.com/poissonconsulting/kootlake/issues).
