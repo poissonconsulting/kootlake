@@ -1,6 +1,6 @@
 Package: kootlake
 Title: Kootenay Lake Data
-Version: 0.2.7.9007
+Version: 0.2.8
 Authors@R: c(
     person("Jeff", "Burrows", role = c("aut", "dtc")),
     person("Matt", "Neufeld", role = c("aut", "dtc")),
@@ -15,8 +15,6 @@ Authors@R: c(
     )
 Description: Annual Rainbow Trout, Bull Trout and Kokanee datasets for Kootenay Lake.
 License: Apache License (== 2.0) | file LICENSE
-URL: https://github.com/poissonconsulting/kootlake
-BugReports: https://github.com/poissonconsulting/kootlake/issues
 Depends:
     R (>= 3.1.0)
 Imports:
@@ -30,6 +28,8 @@ Suggests:
     rmarkdown,
     tibble,
     testthat
+URL: https://github.com/poissonconsulting/kootlake
+BugReports: https://github.com/poissonconsulting/kootlake/issues
 LazyData: true
 RoxygenNote: 6.1.1
 VignetteBuilder: knitr
