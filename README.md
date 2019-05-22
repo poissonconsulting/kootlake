@@ -55,6 +55,11 @@ resistivity counter counts.
 
 ``` r
 library(ggplot2)
+#> Registered S3 methods overwritten by 'ggplot2':
+#>   method         from 
+#>   [.quosures     rlang
+#>   c.quosures     rlang
+#>   print.quosures rlang
 
 ggplot(data = kootlake::gerrard, aes(x = Year, y = PeakCount * 3.08)) + 
   geom_line() + 
@@ -89,4 +94,4 @@ always welcome.
 
 Please note that this project is released with a [Contributor Code of
 Conduct](CONDUCT.md). By participating in this project you agree to
-abide by its terms.
+abide by its terms
