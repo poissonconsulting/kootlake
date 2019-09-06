@@ -9,10 +9,9 @@
 #' @return The original data frame with missing variable values replaced by the estimated value.
 #' @export
 #'
-#' @examples
-#' kl_estimate_na()
 kl_estimate_na <- function(
   x = kootlake::bulltrout, variable = "KasloRedds", predictor = "KasloCounter") {
+  .Deprecated()
   check_data(x)
   check_string(variable)
   check_string(predictor)

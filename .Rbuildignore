@@ -12,3 +12,5 @@
 ^codemeta\.json$
 ^appveyor\.yml$
 ^build\.R$
+^\.covrignore$
+^CODE_OF_CONDUCT\.md$
