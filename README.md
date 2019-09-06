@@ -56,7 +56,7 @@ ggplot(data = kootlake::gerrard, aes(x = Year, y = PeakCount * 3.08)) +
   expand_limits(y = 0)
 ```
 
-![](tools/README-unnamed-chunk-3-1.png)<!-- -->
+<img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />
 
 ## Installation
 
