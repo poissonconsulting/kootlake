@@ -4,8 +4,11 @@
 \alias{kl_estimate_na}
 \title{Estimate Missing Values}
 \usage{
-kl_estimate_na(x = kootlake::bulltrout, variable = "KasloRedds",
-  predictor = "KasloCounter")
+kl_estimate_na(
+  x = kootlake::bulltrout,
+  variable = "KasloRedds",
+  predictor = "KasloCounter"
+)
 }
 \arguments{
 \item{x}{A data frame with columns of the variable and predictor.}

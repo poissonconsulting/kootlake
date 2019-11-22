@@ -3,7 +3,6 @@
 \docType{package}
 \name{kootlake}
 \alias{kootlake}
-\alias{kootlake-package}
 \title{Kootenay Lake Data}
 \description{
 Annual Rainbow Trout, Bull Trout and Kokanee datasets for Kootenay Lake.

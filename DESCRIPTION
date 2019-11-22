@@ -31,6 +31,6 @@ Suggests:
 URL: https://github.com/poissonconsulting/kootlake
 BugReports: https://github.com/poissonconsulting/kootlake/issues
 LazyData: true
-RoxygenNote: 6.1.1
+RoxygenNote: 7.0.0
 VignetteBuilder: knitr
 Encoding: UTF-8
