@@ -1,15 +1,16 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+<!-- badges: start -->
+
 [![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
-[![Travis-CI Build
-Status](https://travis-ci.org/poissonconsulting/kootlake.svg?branch=master)](https://travis-ci.org/poissonconsulting/kootlake)
-[![AppVeyor Build
-Status](https://ci.appveyor.com/api/projects/status/github/poissonconsulting/kootlake?branch=master&svg=true)](https://ci.appveyor.com/project/poissonconsulting/kootlake)
-[![Coverage
-Status](https://img.shields.io/codecov/c/github/poissonconsulting/kootlake/master.svg)](https://codecov.io/github/poissonconsulting/kootlake?branch=master)
+[![R build
+status](https://github.com/poissonconsulting/kootlake/workflows/R-CMD-check/badge.svg)](https://github.com/poissonconsulting/kootlake/actions)
+[![Codecov test
+coverage](https://codecov.io/gh/poissonconsulting/kootlake/branch/master/graph/badge.svg)](https://codecov.io/gh/poissonconsulting/kootlake?branch=master)
 [![Apache
 license](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+<!-- badges: end -->
 
 # Kootenay Lake Data
 
@@ -22,23 +23,23 @@ fecundity information.
 
 ``` r
 library(tibble)
+#> Warning: package 'tibble' was built under R version 3.6.3
 library(kootlake)
 kootlake::fish
 #> # A tibble: 1,843 x 12
-#>     Year Month   Day Species Length Weight Sex   Fecundity Location
-#>    <dbl> <dbl> <dbl> <chr>    <dbl>  <dbl> <chr>     <dbl> <chr>   
-#>  1  1966     1     2 RB         580    2.8 <NA>         NA <NA>    
-#>  2  1966     1     5 RB         650    3.6 <NA>         NA <NA>    
-#>  3  1966     1     7 RB         420    0.8 <NA>         NA <NA>    
-#>  4  1966     1     8 RB         600    3.1 <NA>         NA <NA>    
-#>  5  1966     1     8 RB         630    3.6 <NA>         NA <NA>    
-#>  6  1966     1    15 RB         710    4.6 <NA>         NA <NA>    
-#>  7  1966     1    18 RB         737    6.4 <NA>         NA <NA>    
-#>  8  1966     1    18 RB         620    3   <NA>         NA <NA>    
-#>  9  1966     1    22 RB         500    1.7 <NA>         NA <NA>    
-#> 10  1966     1    30 RB         680    5.2 <NA>         NA <NA>    
-#> # … with 1,833 more rows, and 3 more variables: SampleID <dbl>,
-#> #   Source <chr>, Comment <chr>
+#>     Year Month   Day Species Length Weight Sex   Fecundity Location SampleID
+#>    <dbl> <dbl> <dbl> <chr>    <dbl>  <dbl> <chr>     <dbl> <chr>       <dbl>
+#>  1  1966     1     2 RB         580    2.8 <NA>         NA <NA>          113
+#>  2  1966     1     5 RB         650    3.6 <NA>         NA <NA>          165
+#>  3  1966     1     7 RB         420    0.8 <NA>         NA <NA>          136
+#>  4  1966     1     8 RB         600    3.1 <NA>         NA <NA>          151
+#>  5  1966     1     8 RB         630    3.6 <NA>         NA <NA>          131
+#>  6  1966     1    15 RB         710    4.6 <NA>         NA <NA>          163
+#>  7  1966     1    18 RB         737    6.4 <NA>         NA <NA>          107
+#>  8  1966     1    18 RB         620    3   <NA>         NA <NA>          149
+#>  9  1966     1    22 RB         500    1.7 <NA>         NA <NA>          144
+#> 10  1966     1    30 RB         680    5.2 <NA>         NA <NA>          117
+#> # ... with 1,833 more rows, and 2 more variables: Source <chr>, Comment <chr>
 ```
 
 As well as data sets of annual counts for each species (`bulltrout`,
@@ -49,6 +50,7 @@ information from the Kootenay Lake Rainbow Trout mail out survey (KLRT).
 
 ``` r
 library(ggplot2)
+#> Warning: package 'ggplot2' was built under R version 3.6.3
 
 ggplot(data = kootlake::gerrard, aes(x = Year, y = PeakCount * 3.08)) + 
   geom_line() + 
@@ -76,9 +78,12 @@ Please report any
 [Pull requests](https://github.com/poissonconsulting/kootlake/pulls) are
 always welcome.
 
-Please note that this project is released with a [Contributor Code of
-Conduct](https://github.com/poissonconsulting/kootlake/blob/master/CODE_OF_CONDUCT.md).
-By contributing, you agree to abide by its terms.
+## Code of Conduct
+
+Please note that the kootlake project is released with a [Contributor
+Code of
+Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html).
+By contributing to this project, you agree to abide by its terms.
 
 ## License
 
