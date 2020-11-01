@@ -23,7 +23,6 @@ fecundity information.
 
 ``` r
 library(tibble)
-#> Warning: package 'tibble' was built under R version 3.6.3
 library(kootlake)
 kootlake::fish
 #> # A tibble: 1,843 x 12
@@ -39,7 +38,7 @@ kootlake::fish
 #>  8  1966     1    18 RB         620    3   <NA>         NA <NA>          149
 #>  9  1966     1    22 RB         500    1.7 <NA>         NA <NA>          144
 #> 10  1966     1    30 RB         680    5.2 <NA>         NA <NA>          117
-#> # ... with 1,833 more rows, and 2 more variables: Source <chr>, Comment <chr>
+#> # … with 1,833 more rows, and 2 more variables: Source <chr>, Comment <chr>
 ```
 
 As well as data sets of annual counts for each species (`bulltrout`,
@@ -50,7 +49,6 @@ information from the Kootenay Lake Rainbow Trout mail out survey (KLRT).
 
 ``` r
 library(ggplot2)
-#> Warning: package 'ggplot2' was built under R version 3.6.3
 
 ggplot(data = kootlake::gerrard, aes(x = Year, y = PeakCount * 3.08)) + 
   geom_line() + 

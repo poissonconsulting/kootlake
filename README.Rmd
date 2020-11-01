@@ -63,7 +63,6 @@ Please report any [issues](https://github.com/poissonconsulting/kootlake/issues)
 
 Please note that the kootlake project is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.
 
-
 ## License
 
 The data files are licensed under the [Open Government Licence - British Columbia](https://raw.githubusercontent.com/poissonconsulting/fishbc/master/data-raw/cdc/LICENSE.OGL-BCv2.0).
