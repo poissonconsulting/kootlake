@@ -16,7 +16,7 @@ Authors@R: c(
 Description: Annual Rainbow Trout, Bull Trout and Kokanee datasets for Kootenay Lake.
 License: Apache License (== 2.0) | file LICENSE
 Depends:
-    R (>= 3.1.0)
+    R (>= 3.6)
 Imports:
     chk,
     stats,
