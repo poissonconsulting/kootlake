@@ -19,7 +19,8 @@ Depends:
     R (>= 3.1.0)
 Imports:
     chk,
-    stats
+    stats,
+    lifecycle
 Suggests:
     broom,
     covr,
@@ -34,3 +35,4 @@ LazyData: true
 RoxygenNote: 7.1.1
 VignetteBuilder: knitr
 Encoding: UTF-8
+RdMacros: lifecycle
