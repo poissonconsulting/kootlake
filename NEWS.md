@@ -1,3 +1,8 @@
+# kootlake 0.3.1.9000
+
+- Deprecate `kl_estimate_na()` using lifecycle.
+
+
 # kootlake 0.3.0
 
 - Deprecated `kl_estimate_na()`.
