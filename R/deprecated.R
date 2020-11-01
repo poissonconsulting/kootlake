@@ -12,10 +12,10 @@
 kl_estimate_na <- function(
   x = kootlake::bulltrout, variable = "KasloRedds", predictor = "KasloCounter") {
   .Deprecated()
-  check_data(x)
-  check_string(variable)
-  check_string(predictor)
-  check_colnames(x, c(variable, predictor))
+  chk_data(x)
+  chk_string(variable)
+  chk_string(predictor)
+  chk_colnames(x, c(variable, predictor))
 
   mod <- lm(x[[variable]] ~ x[[predictor]], data = x)
 

@@ -4,13 +4,15 @@
 \name{bulltrout}
 \alias{bulltrout}
 \title{Bull Trout Counts}
-\format{A tbl data frame:
+\format{
+A tbl data frame:
 \describe{
   \item{Year}{The year (int).}
   \item{KasloRedds}{The Kaslo Creek redd count (int).}
   \item{KeenRedds}{The Keen Creek redd count (int).}
   \item{KasloCounter}{The Kaslo Creek resistivity counter count (int).}
-}}
+}
+}
 \usage{
 bulltrout
 }

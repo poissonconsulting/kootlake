@@ -4,7 +4,8 @@
 \name{kokanee}
 \alias{kokanee}
 \title{Kokanee Escapement}
-\format{A data.frame:
+\format{
+A data.frame:
 \describe{
   \item{Year}{The year (int).}
   \item{Lardeau}{The Lardeau River escapement (int).}
@@ -12,7 +13,8 @@
   \item{Fecundity}{The mean number of eggs per female  (int).}
   \item{LengthMale}{The mean male spawner fork length in mm (int).}
   \item{LengthFemale}{The mean female spawner fork length in mm (int).}
-}}
+}
+}
 \usage{
 kokanee
 }

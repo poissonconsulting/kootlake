@@ -4,7 +4,8 @@
 \name{fishery}
 \alias{fishery}
 \title{Kootenay Lake Fishery}
-\format{A data.frame:
+\format{
+A data.frame:
 \describe{
   \item{StartYear}{The start year of the angling season which runs from April to March (int).}
   \item{EndYear}{The end year of the angling season which runs from April to March (int).}
@@ -12,7 +13,8 @@
   \item{Mailings}{Number of end of season surveys mailed out to licence holders (int).}
   \item{Returns}{Number of filled surveys returned (int).}
   \item{AnglerHours}{The estimated number of angler hours expended by anglers who purchased a Kootenay Lake Rainbow Trout (KLRT) Conservation Surcharge License (int).}
-}}
+}
+}
 \usage{
 fishery
 }

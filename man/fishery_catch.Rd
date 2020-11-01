@@ -4,7 +4,8 @@
 \name{fishery_catch}
 \alias{fishery_catch}
 \title{Fishery Catch Counts}
-\format{A data.frame
+\format{
+A data.frame
 \describe{
  \item{StartYear}{The start year of the angling season (int).}
  \item{EndYear}{The end year of the angling season (int).}
@@ -13,7 +14,8 @@
  \item{MinWeight}{Bottom of weight range (int).}
  \item{MaxWeight}{Top of weight range (int).}
  \item{Species}{Species, RB or BT (factor. 2 levels).}
-}}
+}
+}
 \usage{
 fishery_catch
 }

@@ -18,7 +18,7 @@ License: Apache License (== 2.0) | file LICENSE
 Depends:
     R (>= 3.1.0)
 Imports:
-    checkr,
+    chk,
     stats
 Suggests:
     broom,
@@ -31,6 +31,6 @@ Suggests:
 URL: https://github.com/poissonconsulting/kootlake
 BugReports: https://github.com/poissonconsulting/kootlake/issues
 LazyData: true
-RoxygenNote: 7.0.0
+RoxygenNote: 7.1.1
 VignetteBuilder: knitr
 Encoding: UTF-8

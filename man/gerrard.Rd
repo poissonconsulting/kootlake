@@ -4,12 +4,14 @@
 \name{gerrard}
 \alias{gerrard}
 \title{Gerrard Escapement}
-\format{A data.frame:
+\format{
+A data.frame:
 \describe{
   \item{Year}{The year of the spawner count (int).}
   \item{PeakCount}{The peak count (int).}
   \item{FishDays}{The total number of fish days (int).}
-}}
+}
+}
 \usage{
 gerrard
 }

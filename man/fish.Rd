@@ -4,7 +4,8 @@
 \name{fish}
 \alias{fish}
 \title{Rainbow Trout data}
-\format{A data.frame
+\format{
+A data.frame
 \describe{
   \item{Year}{The year (int).}
   \item{Month}{The month (int).}
@@ -18,7 +19,8 @@
   \item{SampleID}{Sample ID}
   \item{Source}{The source of the data (char).}
   \item{Comment}{comments for observations with year date ranges (char).}
-}}
+}
+}
 \usage{
 fish
 }
