@@ -2,6 +2,10 @@
 
 - Deprecate `kl_estimate_na()` using lifecycle.
 
+# kootlake 0.3.1
+
+- Adjust Kaslo and Keen Creek Bull Trout Redd data for 2017.
+- Add Kaslo and Keen Creek Bull Trout Redd data for 2018 and 2019.
 
 # kootlake 0.3.0
 
