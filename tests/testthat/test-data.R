@@ -23,7 +23,7 @@ test_that("fishery", {
 
 test_that("gerrard", {
  expect_null(chk::check_data(kootlake::gerrard, values = list(
-    Year = c(1961L, 2020L),
+    Year = c(1957L, 2020L),
     PeakCount = c(0L, 1500L),
     FishDays = c(0L, 20000L, NA)
     ),
