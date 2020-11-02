@@ -84,7 +84,6 @@
 <p>It provides a data set of individual fish length, weight, sex and fecundity information.</p>
 <div class="sourceCode" id="cb1"><pre class="downlit">
 <span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tibble.tidyverse.org/">tibble</a></span><span class="op">)</span>
-<span class="co">#&gt; Warning: package 'tibble' was built under R version 3.6.3</span>
 <span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/poissonconsulting/kootlake">kootlake</a></span><span class="op">)</span>
 <span class="fu">kootlake</span><span class="fu">::</span><span class="va"><a href="reference/fish.html">fish</a></span>
 <span class="co">#&gt; # A tibble: 1,843 x 12</span>
@@ -100,14 +99,13 @@
 <span class="co">#&gt;  8  1966     1    18 RB         620    3   &lt;NA&gt;         NA &lt;NA&gt;          149</span>
 <span class="co">#&gt;  9  1966     1    22 RB         500    1.7 &lt;NA&gt;         NA &lt;NA&gt;          144</span>
 <span class="co">#&gt; 10  1966     1    30 RB         680    5.2 &lt;NA&gt;         NA &lt;NA&gt;          117</span>
-<span class="co">#&gt; # ... with 1,833 more rows, and 2 more variables: Source &lt;chr&gt;, Comment &lt;chr&gt;</span></pre></div>
+<span class="co">#&gt; # … with 1,833 more rows, and 2 more variables: Source &lt;chr&gt;, Comment &lt;chr&gt;</span></pre></div>
 <p>As well as data sets of annual counts for each species (<code>bulltrout</code>, <code>kokanee</code> and <code>gerrard</code>) and annual <code>fishery</code> and <code>fishery_catch</code> information from the Kootenay Lake Rainbow Trout mail out survey (KLRT).</p>
 <div id="demonstration" class="section level2">
 <h2 class="hasAnchor">
 <a href="#demonstration" class="anchor"></a>Demonstration</h2>
 <div class="sourceCode" id="cb2"><pre class="downlit">
 <span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="http://ggplot2.tidyverse.org">ggplot2</a></span><span class="op">)</span>
-<span class="co">#&gt; Warning: package 'ggplot2' was built under R version 3.6.3</span>
 
 <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span>data <span class="op">=</span> <span class="fu">kootlake</span><span class="fu">::</span><span class="va"><a href="reference/gerrard.html">gerrard</a></span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">Year</span>, y <span class="op">=</span> <span class="va">PeakCount</span> <span class="op">*</span> <span class="fl">3.08</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> 
   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_path.html">geom_line</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span> 
@@ -187,6 +185,7 @@
 <li>Jeff Burrows <br><small class="roles"> Author, data contributor </small>  </li>
 <li>Matt Neufeld <br><small class="roles"> Author, data contributor </small>  </li>
 <li>Greg Andrusak <br><small class="roles"> Author, data contributor </small>  </li>
+<li>Marley Basset <br><small class="roles"> Author, data contributor </small>  </li>
 <li>Eva Schindler <br><small class="roles"> Author, data contributor </small>  </li>
 <li>Joe Thorley <br><small class="roles"> Author, maintainer, data contributor </small> <a href="https://orcid.org/0000-0002-7683-4592" target="orcid.widget" aria-label="ORCID"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
 <li>Evan Amies-Galonski <br><small class="roles"> Author, contributor </small>  </li>
@@ -208,7 +207,7 @@
 
 
       <footer><div class="copyright">
-  <p>Developed by Jeff Burrows, Matt Neufeld, Greg Andrusak, Eva Schindler, Joe Thorley, Evan Amies-Galonski.</p>
+  <p>Developed by Jeff Burrows, Matt Neufeld, Greg Andrusak, Marley Basset, Eva Schindler, Joe Thorley, Evan Amies-Galonski.</p>
 </div>
 
 <div class="pkgdown">
