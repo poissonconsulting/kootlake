@@ -1,5 +1,3 @@
-context("data")
-
 test_that("bulltrout", {
  expect_identical(chk::check_data(kootlake::bulltrout, values = list(
     Year = c(1964L, 2020L),
