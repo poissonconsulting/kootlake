@@ -16,8 +16,3 @@ The same object.
 function included as workaround for issue:
 https://github.com/r-lib/covr/issues/427
 }
-\examples{
-
-temp_function(3)
-
-}

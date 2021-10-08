@@ -6,11 +6,6 @@
 #' @param x Any object
 #'
 #' @return The same object.
-#' @export
-#'
-#' @examples
-#'
-#' temp_function(3)
 #'
 
 temp_function <- function(x) {
