@@ -39,7 +39,7 @@
   <a href="../news/index.html">Changelog</a>
 </li>
       </ul><ul class="nav navbar-nav navbar-right"><li>
-  <a href="https://github.com/poissonconsulting/kootlake/">
+  <a href="https://github.com/poissonconsulting/kootlake/" class="external-link">
     <span class="fab fa-github fa-lg"></span>
      
   </a>
@@ -54,7 +54,7 @@
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Rainbow Trout data</h1>
-    <small class="dont-index">Source: <a href="https://github.com/poissonconsulting/kootlake/blob/master/R/data.R"><code>R/data.R</code></a></small>
+    <small class="dont-index">Source: <a href="https://github.com/poissonconsulting/kootlake/blob/HEAD/R/data.R" class="external-link"><code>R/data.R</code></a></small>
     <div class="hidden name"><code>fish.Rd</code></div>
     </div>
 
@@ -62,27 +62,54 @@
     <p>Data for individual Rainbow Trout in lakes and rivers.</p>
     </div>
 
-    <div class="ref-usage sourceCode"><pre class="sourceCode r"><code><span class="va">fish</span></code></pre></div>
+    <div id="ref-usage">
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="va">fish</span></code></pre></div>
+    </div>
+
+    <div id="format">
+    <h2>Format</h2>
+    <p>A data.frame</p><dl><dt>Year</dt>
+<dd><p>The year (int).</p></dd>
+
+  <dt>Month</dt>
+<dd><p>The month (int).</p></dd>
+
+  <dt>Day</dt>
+<dd><p>The day (int).</p></dd>
+
+  <dt>Species</dt>
+<dd><p>Species by code eg. "RB" (factor, 1 level).</p></dd>
+
+  <dt>Length</dt>
+<dd><p>Fork length in mm (int).</p></dd>
+
+  <dt>Weight</dt>
+<dd><p>Weight in kg (int).</p></dd>
+
+  <dt>Sex</dt>
+<dd><p>Sex, "male" or "female" (factor, 2 levels).</p></dd>
+
+  <dt>Fecundity</dt>
+<dd><p>number of eggs (int).</p></dd>
+
+  <dt>Location</dt>
+<dd><p>Lake or River (factor, 2 levels)</p></dd>
+
+  <dt>SampleID</dt>
+<dd><p>Sample ID</p></dd>
+
+  <dt>Source</dt>
+<dd><p>The source of the data (char).</p></dd>
+
+  <dt>Comment</dt>
+<dd><p>comments for observations with year date ranges (char).</p></dd>
 
 
-    <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
-
-    <p>A data.frame</p><dl><dt>Year</dt><dd><p>The year (int).</p></dd>
-  <dt>Month</dt><dd><p>The month (int).</p></dd>
-  <dt>Day</dt><dd><p>The day (int).</p></dd>
-  <dt>Species</dt><dd><p>Species by code eg. "RB" (factor, 1 level).</p></dd>
-  <dt>Length</dt><dd><p>Fork length in mm (int).</p></dd>
-  <dt>Weight</dt><dd><p>Weight in kg (int).</p></dd>
-  <dt>Sex</dt><dd><p>Sex, "male" or "female" (factor, 2 levels).</p></dd>
-  <dt>Fecundity</dt><dd><p>number of eggs (int).</p></dd>
-  <dt>Location</dt><dd><p>Lake or River (factor, 2 levels)</p></dd>
-  <dt>SampleID</dt><dd><p>Sample ID</p></dd>
-  <dt>Source</dt><dd><p>The source of the data (char).</p></dd>
-  <dt>Comment</dt><dd><p>comments for observations with year date ranges (char).</p></dd>
-
-</dl><h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
-
+</dl></div>
+    <div id="see-also">
+    <h2>See also</h2>
     <div class="dont-index"><p><code><a href="kootlake.html">kootlake</a></code>.</p></div>
+    </div>
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
@@ -96,7 +123,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 1.9000.9000.9000.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.9000.</p>
 </div>
 
       </footer></div>

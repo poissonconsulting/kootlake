@@ -83,7 +83,7 @@
             
             <h4 data-toc-skip class="date">May 25, 2018</h4>
       
-      <small class="dont-index">Source: <a href="https://github.com/poissonconsulting/kootlake/blob/master/vignettes/allometry.Rmd" class="external-link"><code>vignettes/allometry.Rmd</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/poissonconsulting/kootlake/blob/HEAD/vignettes/allometry.Rmd" class="external-link"><code>vignettes/allometry.Rmd</code></a></small>
       <div class="hidden name"><code>allometry.Rmd</code></div>
 
     </div>
@@ -91,9 +91,9 @@
     
     
 <p>Here we plot relationships between Rainbow Trout metrics and fit a linear model to estimate the allometric ralationships for:</p>
-<div id="weight-vs-length" class="section level2">
-<h2 class="hasAnchor">
-<a href="#weight-vs-length" class="anchor" aria-hidden="true"></a>Weight vs Length</h2>
+<div class="section level2">
+<h2 id="weight-vs-length">Weight vs Length<a class="anchor" aria-label="anchor" href="#weight-vs-length"></a>
+</h2>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org" class="external-link">ggplot2</a></span><span class="op">)</span>
 <span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://broom.tidymodels.org/" class="external-link">broom</a></span><span class="op">)</span>
@@ -120,9 +120,9 @@
 <span class="co">#&gt; <span style="color: #BCBCBC;">1</span> (Intercept)   -<span style="color: #BB0000;">18.4</span>     0.127      -<span style="color: #BB0000;">145.</span>       0   -<span style="color: #BB0000;">18.6</span>     -<span style="color: #BB0000;">18.1</span> </span>
 <span class="co">#&gt; <span style="color: #BCBCBC;">2</span> log(Length)     3.02    0.019<span style="text-decoration: underline;">9</span>      152.       0     2.98      3.06</span></code></pre></div>
 </div>
-<div id="fecundity-vs-length" class="section level2">
-<h2 class="hasAnchor">
-<a href="#fecundity-vs-length" class="anchor" aria-hidden="true"></a>Fecundity vs Length</h2>
+<div class="section level2">
+<h2 id="fecundity-vs-length">Fecundity vs Length<a class="anchor" aria-label="anchor" href="#fecundity-vs-length"></a>
+</h2>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">FL_mod</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/lm.html" class="external-link">lm</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/Log.html" class="external-link">log</a></span><span class="op">(</span><span class="va">Fecundity</span><span class="op">)</span> <span class="op">~</span> <span class="fu"><a href="https://rdrr.io/r/base/Log.html" class="external-link">log</a></span><span class="op">(</span><span class="va">Length</span><span class="op">)</span>, data <span class="op">=</span> <span class="va">fish</span><span class="op">)</span>
 
@@ -143,9 +143,9 @@
 <span class="co">#&gt; <span style="color: #BCBCBC;">1</span> (Intercept)   -<span style="color: #BB0000;">12.1</span>      0.875     -<span style="color: #BB0000;">13.9</span> 3.32<span style="color: #949494;">e</span><span style="color: #BB0000;">-20</span>   -<span style="color: #BB0000;">13.9</span>     -<span style="color: #BB0000;">10.4</span> </span>
 <span class="co">#&gt; <span style="color: #BCBCBC;">2</span> log(Length)     3.17     0.135      23.5 1.25<span style="color: #949494;">e</span><span style="color: #BB0000;">-31</span>     2.90      3.44</span></code></pre></div>
 </div>
-<div id="fecundity-vs-weight" class="section level2">
-<h2 class="hasAnchor">
-<a href="#fecundity-vs-weight" class="anchor" aria-hidden="true"></a>Fecundity vs Weight</h2>
+<div class="section level2">
+<h2 id="fecundity-vs-weight">Fecundity vs Weight<a class="anchor" aria-label="anchor" href="#fecundity-vs-weight"></a>
+</h2>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">FW_mod</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/lm.html" class="external-link">lm</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/Log.html" class="external-link">log</a></span><span class="op">(</span><span class="va">Fecundity</span><span class="op">)</span> <span class="op">~</span> <span class="fu"><a href="https://rdrr.io/r/base/Log.html" class="external-link">log</a></span><span class="op">(</span><span class="va">Weight</span><span class="op">)</span>, data <span class="op">=</span> <span class="va">fish</span><span class="op">)</span>
 
@@ -185,7 +185,7 @@
 
 <div class="pkgdown">
   <p></p>
-<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link external-link">pkgdown</a> 1.9000.9000.9000.</p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.9000.</p>
 </div>
 
       </footer>
