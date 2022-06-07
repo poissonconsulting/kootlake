@@ -23,7 +23,8 @@ test_that("gerrard", {
  expect_invisible(chk::check_data(kootlake::gerrard, values = list(
     Year = c(1L),
     PeakCount = c(0L, 1500L, NA),
-    FishDays = c(0L, 20000L, NA)
+    FishDays = c(0L, 20000L, NA),
+    FishRemoved = c(0L, 1000)
     ),
     exclusive = TRUE,
     order = TRUE,

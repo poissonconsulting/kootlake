@@ -10,6 +10,7 @@ A data.frame:
   \item{Year}{The year of the spawner count (int).}
   \item{PeakCount}{The peak count (int).}
   \item{FishDays}{The total number of fish days (int).}
+  \item{FishRemoved}{The total number of fish removed prior to spawning.}
 }
 }
 \usage{

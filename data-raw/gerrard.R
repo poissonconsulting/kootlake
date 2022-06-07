@@ -10,6 +10,14 @@ gerrard %<>%
   filter(Year >= 1961) %>%
   arrange(Year) %>%
   select(Year, PeakCount, FishDays) %>%
-  mutate(Year = as.integer(Year), PeakCount = as.integer(PeakCount), FishDays = as.integer(FishDays))
+  mutate(
+    Year = as.integer(Year),
+    PeakCount = as.integer(PeakCount),
+    FishDays = as.integer(FishDays),
+    FishRemoved = case_when(
+      Year == 2021 ~ 150,
+      TRUE ~ 0
+      )
+    )
 
 usethis::use_data(gerrard, overwrite = TRUE)
