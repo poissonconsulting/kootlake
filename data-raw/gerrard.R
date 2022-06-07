@@ -15,7 +15,7 @@ gerrard %<>%
     PeakCount = as.integer(PeakCount),
     FishDays = as.integer(FishDays),
     FishRemoved = case_when(
-      Year == 2021 ~ 150,
+      Year == 2022 ~ 150,
       TRUE ~ 0
       )
     )
