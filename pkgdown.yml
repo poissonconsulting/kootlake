@@ -1,7 +1,7 @@
 pandoc: 2.7.3
-pkgdown: 2.0.3.9000
-pkgdown_sha: 855eba1ad3f486bbda9fcbe43ec8eb88066f161a
+pkgdown: 2.0.4.9000
+pkgdown_sha: 7d7ebff95f580b70c3d955ba726871d60f3d81a8
 articles:
   allometry: allometry.html
-last_built: 2022-06-06T22:44Z
+last_built: 2022-06-13T23:18Z
 
