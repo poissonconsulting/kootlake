@@ -1,4 +1,4 @@
-﻿Year,Species,Sex,Weight,Length,Source
+Year,Species,Sex,Weight,Length,Source
 2018,RB,m,1.5,56,Biological Data
 2018,RB,m,1.6,57,Biological Data
 2018,RB,m,1.1,46.5,Biological Data
@@ -103,3 +103,8 @@
 2021,RB,f,1.1,50,Biological Data
 2021,RB,f,1,52,Biological Data
 2021,RB,m,1.15,52,Biological Data
+2021,RB,m,0.9,51.0,Biological Data
+2021,RB,m,1.3,52.0,Biological Data
+2021,RB,f,0.7,47.5,Biological Data
+2021,RB,f,0.85,46.0,Biological Data
+2021,RB,f,0.95,49.0,Biological Data
