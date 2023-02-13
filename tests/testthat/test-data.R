@@ -1,6 +1,6 @@
 test_that("bulltrout", {
  expect_invisible(chk::check_data(kootlake::bulltrout, values = list(
-    Year = c(1964L, 2021L),
+    Year = c(1964L, 2022L),
     KasloRedds = c(100L, 2000L, NA),
     KeenRedds = c(10L, 500L, NA),
     KasloCounter = c(100L, 2000L, NA)),
