@@ -37,3 +37,4 @@ RoxygenNote: 7.3.2.9000
 VignetteBuilder: knitr
 Encoding: UTF-8
 RdMacros: lifecycle
+Config/Needs/website: poissonconsulting/poissontemplate
