@@ -2,6 +2,7 @@
 % Please edit documentation in R/package.R
 \docType{package}
 \name{kootlake}
+\alias{kootlake-package}
 \alias{kootlake}
 \title{Kootenay Lake Data}
 \description{
@@ -24,4 +25,25 @@ ggplot(data = gerrard, aes(x = Year, y = Escapement)) +
 }
 \seealso{
 \code{\link{bulltrout}}, \code{\link{fishery}}, \code{\link{gerrard}} and \code{\link{kokanee}}
+}
+\author{
+\strong{Maintainer}: Joe Thorley \email{joe@poissonconsulting.ca} (\href{https://orcid.org/0000-0002-7683-4592}{ORCID}) [data contributor]
+
+Authors:
+\itemize{
+  \item Jeff Burrows [data contributor]
+  \item Matt Neufeld [data contributor]
+  \item Greg Andrusak [data contributor]
+  \item Marley Basset [data contributor]
+  \item Eva Schindler [data contributor]
+  \item Evan Amies-Galonski [contributor]
+}
+
+Other contributors:
+\itemize{
+  \item Murray Pearson [data contributor]
+  \item Rhonda Gates [data contributor]
+  \item Jess Spencer [data contributor]
+}
+
 }
