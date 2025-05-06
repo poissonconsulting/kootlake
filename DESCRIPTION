@@ -28,7 +28,8 @@ Suggests:
     knitr,
     rmarkdown,
     tibble,
-    testthat
+    testthat,
+    readxl
 URL: https://github.com/poissonconsulting/kootlake
 BugReports: https://github.com/poissonconsulting/kootlake/issues
 LazyData: true
