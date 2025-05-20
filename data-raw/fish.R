@@ -22,7 +22,7 @@ fish_recent <- readxl::read_excel(
   suppressMessages() %>%
   filter(Year != "1949-59") %>%
   mutate(Year = as.integer(Year)) %>%
-  filter(Year > 2021) %>%
+  filter(Year > 2017) %>%
   mutate(
     Year = as.integer(Year), Species = "RB", Length = Length * 10,
     `Weight(kg)` = if_else(`Weight(kg)` == "-", NA_character_, `Weight(kg)`),
