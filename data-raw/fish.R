@@ -5,6 +5,12 @@ library(devtools)
 
 rm(list = ls())
 
+remove <- data.frame(
+       Length = c(4550, 3200, 2600, 2400, 1900, 1800, 1700, 1200),
+       Weight = c(1.1, 3.2, 2.6, 2.4, 1.9, 1.8, 1.7, 1.2),
+       remove = TRUE
+       )
+
 fish <- read_csv("data-raw/fish.csv")
 fish %<>% arrange(Year) %>%
   mutate(
@@ -45,12 +51,15 @@ fish_25 <- readxl::read_excel(
       tolower(Sex) == "f" ~ "Female",
       .default = NA_character_
     ),
-    Source = "Gerrard reductions program 2025"
+    Source = "Gerrard reductions program 2025",
+    Weight = Weight / 1000
     )
 
 fish %<>%
   bind_rows(fish_recent) %>%
   bind_rows(fish_25) %>%
-  arrange(Year, Month, Day)
+  arrange(Year, Month, Day) %>%
+  left_join(remove, by = c("Length", "Weight")) %>%
+  filter(is.na(remove))
 
 usethis::use_data(fish, overwrite = TRUE)
