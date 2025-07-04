@@ -15,7 +15,7 @@ fish %<>% arrange(Year) %>%
   )
 
 fish_recent <- readxl::read_excel(
-  "~/Poisson/Data/lar-ldr-rb/2024/Gerrard data for Evan 2024.xlsx",
+  "data-raw/Gerrard data for Evan 2024.xlsx",
   sheet = 2,
   skip = 2
 ) %>%
@@ -34,8 +34,23 @@ fish_recent <- readxl::read_excel(
     )) %>%
   select(Year, Species, Length, Weight, Sex, Source = `Project/Source`)
 
+fish_25 <- readxl::read_excel(
+  'data-raw/Gerrard Biodata Filtered 2025.xlsx'
+) %>%
+  filter(!(is.na(Length) & is.na(Weight))) %>%
+  transmute(
+    Year = 2025, Species, Length, Weight,
+    Sex = case_when(
+      tolower(Sex) == "m" ~ "Male",
+      tolower(Sex) == "f" ~ "Female",
+      .default = NA_character_
+    ),
+    Source = "Gerrard reductions program 2025"
+    )
 
-fish %<>% bind_rows(fish_recent) %>%
+fish %<>%
+  bind_rows(fish_recent) %>%
+  bind_rows(fish_25) %>%
   arrange(Year, Month, Day)
 
 usethis::use_data(fish, overwrite = TRUE)
