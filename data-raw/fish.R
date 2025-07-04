@@ -38,7 +38,15 @@ fish_recent <- readxl::read_excel(
       Sex == "f" ~ "Female",
       .default = NA_character_
     )) %>%
-  select(Year, Species, Length, Weight, Sex, Source = `Project/Source`)
+  select(Year, Species, Length, Weight, Sex, Source = `Project/Source`) %>%
+  filter(Year == 2022, Sex == "Female")
+
+fish_22 <- readxl::read_excel('data-raw/2022 Gerrard Fecundity Samples Weight.xlsx') %>%
+  transmute(
+    Year = 2022, Species = "RB", Length = `Fish length (mm)`,
+    Weight = `Fish Weight (g)` / 1000, Fecundity = `Total eggs in skein`, Sex = "Female",
+    Source = "2022 Gerrard Fecundity Samples"
+    )
 
 fish_25 <- readxl::read_excel(
   'data-raw/Gerrard Biodata Filtered 2025.xlsx'
@@ -58,6 +66,7 @@ fish_25 <- readxl::read_excel(
 fish %<>%
   bind_rows(fish_recent) %>%
   bind_rows(fish_25) %>%
+  bind_rows(fish_22) %>%
   arrange(Year, Month, Day) %>%
   left_join(remove, by = c("Length", "Weight")) %>%
   filter(is.na(remove))
