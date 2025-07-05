@@ -38,8 +38,7 @@ fish_recent <- readxl::read_excel(
       Sex == "f" ~ "Female",
       .default = NA_character_
     )) %>%
-  select(Year, Species, Length, Weight, Sex, Source = `Project/Source`) %>%
-  filter(Year == 2022, Sex == "Female")
+  select(Year, Species, Length, Weight, Sex, Source = `Project/Source`)
 
 fish_22 <- readxl::read_excel('data-raw/2022 Gerrard Fecundity Samples Weight.xlsx') %>%
   transmute(
