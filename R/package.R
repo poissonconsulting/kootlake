@@ -7,7 +7,6 @@
 #' By default it estimates missing Bull Trout redd counts for Kaslo Creek
 #' using the resistivity counter counts.
 #'
-#' @docType package
 #' @name kootlake
 #' @seealso \code{\link{bulltrout}}, \code{\link{fishery}}, \code{\link{gerrard}} and \code{\link{kokanee}}
 #' @examples
