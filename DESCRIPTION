@@ -8,7 +8,8 @@ Authors@R: c(
     person("Marley", "Basset", role = c("aut", "dtc")),
     person("Eva", "Schindler", role = c("aut", "dtc")),
     person("Joe", "Thorley", , "joe@poissonconsulting.ca", c("aut", "cre", "dtc"), comment = c(ORCID = "0000-0002-7683-4592")),
-    person("Evan", "Amies-Galonski", role = "aut"),
+    person("Evan", "Amies-Galonski", role = "aut",
+           comment = c(ORCID = "0000-0003-1096-2089")),
     person("Rhonda", "Gates", role = "dtc"),
     person("Jess", "Spencer", role = "dtc")
     )
