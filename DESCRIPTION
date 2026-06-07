@@ -4,7 +4,8 @@ Version: 0.3.1.9001
 Authors@R: c(
     person("Jeff", "Burrows", role = c("aut", "dtc")),
     person("Matt", "Neufeld", role = c("aut", "dtc")),
-    person("Greg", "Andrusak", role = c("aut", "dtc")),
+    person("Greg", "Andrusak", role = c("aut", "dtc"),
+           comment = c(ORCID = "0009-0008-0093-8521")),
     person("Marley", "Basset", role = c("aut", "dtc")),
     person("Eva", "Schindler", role = c("aut", "dtc")),
     person("Joe", "Thorley", , "joe@poissonconsulting.ca", c("aut", "cre", "dtc"), comment = c(ORCID = "0000-0002-7683-4592")),
