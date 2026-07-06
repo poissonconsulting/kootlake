@@ -33,12 +33,12 @@ Source:
 
 Burrows J, Neufeld M, Andrusak G, Basset M, Schindler E, Thorley J,
 Amies-Galonski E (2026). *kootlake: Kootenay Lake Data*. R package
-version 0.3.1.9001, <https://github.com/poissonconsulting/kootlake>.
+version 0.3.1.9002, <https://github.com/poissonconsulting/kootlake>.
 
     @Manual{,
       title = {kootlake: Kootenay Lake Data},
       author = {Jeff Burrows and Matt Neufeld and Greg Andrusak and Marley Basset and Eva Schindler and Joe Thorley and Evan Amies-Galonski},
       year = {2026},
-      note = {R package version 0.3.1.9001},
+      note = {R package version 0.3.1.9002},
       url = {https://github.com/poissonconsulting/kootlake},
     }

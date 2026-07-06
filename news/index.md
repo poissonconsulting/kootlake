@@ -1,5 +1,18 @@
 # Changelog
 
+## kootlake 0.3.1.9002
+
+- Add fledge-bump workflow
+- Add fledge-tag-on-merge workflow
+- Add 2020 Kaslo River redd data
+- Added 2020 gerrard peak counts and fish days.
+- Added 1957 to 1960 gerrard peak count.
+- Adjusted 2019 gerrard peak count.
+- Adjusted 2018 and 2019 gerrard fish days.
+- Deprecate
+  [`kl_estimate_na()`](https://poissonconsulting.github.io/kootlake/reference/kl_estimate_na.md)
+  using lifecycle.
+
 ## kootlake 0.3.1.9001
 
 - Add 2020 Kaslo River redd data
