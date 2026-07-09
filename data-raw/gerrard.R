@@ -13,7 +13,9 @@ gerrard <- readxl::read_excel(
 ) %>%
   suppressMessages() %>%
   select(
-    Year = `...1`, PeakCount = count, FishDays = `(fish*days)`
+    Year = `...1`,
+    PeakCount = count,
+    FishDays = `(fish*days)`
   ) %>%
   left_join(fish_removed, by = "Year") %>%
   mutate(

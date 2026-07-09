@@ -10,8 +10,10 @@
 #' @export
 #'
 kl_estimate_na <- function(
-  x = kootlake::bulltrout, variable = "KasloRedds", predictor = "KasloCounter") {
-
+  x = kootlake::bulltrout,
+  variable = "KasloRedds",
+  predictor = "KasloCounter"
+) {
   lifecycle::deprecate_stop("0.3.2", "kl_estimate_na()")
   chk_data(x)
   chk_string(variable)
