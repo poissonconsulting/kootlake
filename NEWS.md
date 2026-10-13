@@ -62,7 +62,7 @@
 
 - Added KLRT angler hours.
 
-# kootlake 0.2.4
+# kootlake 0.2.3
 
 - Release on Zenodo
 
